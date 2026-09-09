@@ -20,7 +20,7 @@ data/processed/
 !data/processed/.gitkeep
 data/embeddings/
 outputs/
-reports/
+
 *.npy
 *.npz
 

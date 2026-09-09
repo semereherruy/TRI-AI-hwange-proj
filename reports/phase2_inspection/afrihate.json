@@ -1,0 +1,23 @@
+{
+  "name": "AfriHate",
+  "status": "NO LOCAL DATA",
+  "local_path": "data/raw/AfriHate-main",
+  "local_data_files": [],
+  "local_contents_note": "repository clone contains README and assets only",
+  "hub": {
+    "repo_id": "afrihate/afrihate",
+    "reachable": true,
+    "gated": true,
+    "configs": null,
+    "last_modified": "2025-06-09 16:40:22+00:00"
+  },
+  "provenance": {
+    "generation": "human-written tweets in 18 African languages",
+    "annotation": "human, native-speaker annotators",
+    "is_synthetic": false
+  },
+  "open_decisions": [
+    "Label vocabulary is unknown until the Hub data is fetched. No mapping to binary is possible or attempted yet; AfriHate distinguishes hate from abuse/offensive.",
+    "Which of the 18 languages to include, and whether Amharic is selected to pair with Ubuntu."
+  ]
+}

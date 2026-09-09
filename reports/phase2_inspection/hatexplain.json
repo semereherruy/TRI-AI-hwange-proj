@@ -1,0 +1,289 @@
+{
+  "name": "HateXplain",
+  "status": "AVAILABLE",
+  "path": "data/raw/HateXplain-master/Data/dataset.json",
+  "format": "JSON, one object per post_id",
+  "n_records": 20148,
+  "fields": [
+    "annotators",
+    "post_id",
+    "post_tokens",
+    "rationales"
+  ],
+  "provenance": {
+    "generation": "human-written social media posts (Twitter, Gab)",
+    "annotation": "human, multiple annotators per post",
+    "is_synthetic": false
+  },
+  "language": {
+    "stated": "English",
+    "verified": false,
+    "note": "no language ID run; corpus is documented as English"
+  },
+  "profile": {
+    "shape": {
+      "rows": 20148,
+      "columns": 4
+    },
+    "columns": [
+      "post_id",
+      "text",
+      "n_tokens",
+      "n_annotators"
+    ],
+    "column_profiles": {
+      "post_id": {
+        "dtype": "object",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_empty_string": 0,
+        "n_distinct": 20148,
+        "fully_enumerated": false,
+        "counts": {
+          "1179055004553900032_twitter": 1,
+          "1179063826874032128_twitter": 1,
+          "1178793830532956161_twitter": 1,
+          "1179088797964763136_twitter": 1,
+          "1179085312976445440_twitter": 1,
+          "13851720_gab": 1,
+          "24198545_gab": 1,
+          "14567516_gab": 1,
+          "19679648_gab": 1,
+          "15858421_gab": 1,
+          "23844035_gab": 1,
+          "1089312238102609921_twitter": 1,
+          "1159278048069464065_twitter": 1,
+          "1170440965888335874_twitter": 1,
+          "1104904416430194688_twitter": 1,
+          "1122734457230774272_twitter": 1,
+          "1084835380619300864_twitter": 1,
+          "1178818409812746240_twitter": 1,
+          "1178905338386567168_twitter": 1,
+          "18696652_gab": 1,
+          "1178692320201527307_twitter": 1,
+          "1178694945319858184_twitter": 1,
+          "1178177759971086336_twitter": 1,
+          "15544666_gab": 1,
+          "26031285_gab": 1
+        },
+        "examples": [
+          "1179055004553900032_twitter",
+          "1179063826874032128_twitter",
+          "1178793830532956161_twitter"
+        ]
+      },
+      "text": {
+        "dtype": "object",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_empty_string": 0,
+        "n_distinct": 20109,
+        "fully_enumerated": false,
+        "counts": {
+          "<user> i hate you": 14,
+          "<user> y are u focusing on that when nazis exist": 4,
+          "<user> i fucking hate you": 3,
+          "<user> <number> bank islam": 3,
+          "cause these niggas pussy and i am hard": 2,
+          "teacher asks class where is pakistan little johnny replies outside with paki steve": 2,
+          "jury in the katie stienle trial just let the piece of shit off not guilty of murder vigilante justice needs to make a come back in a big way if there going to let murdering beaners walk the streets": 2,
+          "<user> it okay to be white": 2,
+          "<user> i fucking hate you 😂": 2,
+          "niggas acting like bitches": 2,
+          "two gay guys living together and pooling their resources you know have more resources also before everygaycouple started adopting non verbal special needs niglet boys none cared about the quality of schools the only gays i know that adopted a girl other than on modern family adopted a niece": 2,
+          "<user> ching chong": 2,
+          "being different is a crime according to the left and i would assume there muzzie friends follow the same retarded narrative individual autonomy is going extinct brace yourselves political correctness": 2,
+          "<user> i fucking hate you 😂 😂 😂": 2,
+          "karma is a bitch": 2,
+          "i love the muslim unity amongst islamic nations how come they did not take in even one muslim refugee 🤔": 2,
+          "i hate you": 2,
+          "<user> ok buddy retard": 2,
+          "<user> <user> are you retarded": 2,
+          "<user> i hate you 😂": 2,
+          "<user> are you a fucking retard": 2,
+          "daily reminder that with the jews you lose do not believe me just ask jesus": 2,
+          "greatest hope for mankind is to reach out to muslims who have not yet been enlisted to violence": 2,
+          "i dont think im getting my baby them white 9 he has two white j and nikes not even touched": 1,
+          "we cannot continue calling ourselves feminists if the rights of all womxn arent addressed yes to a sexual offences public list but will a trans lesbian bisexual and queer womxn be able to enter their information on the reporting sheet gender forum": 1
+        },
+        "examples": [
+          "i dont think im getting my baby them white 9 he has two white j and nikes not even touched",
+          "we cannot continue calling ourselves feminists if the rights of all womxn arent addressed yes to a sexual offences public list but will a trans lesbian bisexual and queer womxn be able to enter their information on the reporting sheet gender forum",
+          "nawt yall niggers ignoring me"
+        ]
+      },
+      "n_tokens": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_empty_string": 0,
+        "n_distinct": 64,
+        "fully_enumerated": false,
+        "counts": {
+          "9": 656,
+          "12": 644,
+          "10": 632,
+          "11": 626,
+          "17": 617,
+          "14": 608,
+          "8": 606,
+          "13": 604,
+          "15": 593,
+          "19": 579,
+          "18": 578,
+          "16": 576,
+          "7": 572,
+          "6": 558,
+          "20": 539,
+          "21": 525,
+          "23": 499,
+          "5": 492,
+          "22": 471,
+          "24": 439,
+          "25": 429,
+          "26": 379,
+          "27": 375,
+          "4": 342,
+          "28": 338
+        },
+        "examples": [
+          "20",
+          "42",
+          "5"
+        ]
+      },
+      "n_annotators": {
+        "dtype": "int64",
+        "n_missing": 0,
+        "pct_missing": 0.0,
+        "n_empty_string": 0,
+        "n_distinct": 1,
+        "fully_enumerated": true,
+        "counts": {
+          "3": 20148
+        }
+      }
+    },
+    "duplication": {
+      "text": {
+        "n_rows": 20148,
+        "n_distinct_exact": 20109,
+        "n_distinct_normalized": 20109,
+        "n_exact_duplicate_rows": 39,
+        "pct_duplicate_rows": 0.19,
+        "repetition_factor": 1.0,
+        "most_repeated": [
+          {
+            "text": "<user> i hate you",
+            "count": 14
+          },
+          {
+            "text": "<user> y are u focusing on that when nazis exist",
+            "count": 4
+          },
+          {
+            "text": "<user> i fucking hate you",
+            "count": 3
+          },
+          {
+            "text": "<user> <number> bank islam",
+            "count": 3
+          },
+          {
+            "text": "cause these niggas pussy and i am hard",
+            "count": 2
+          }
+        ]
+      }
+    },
+    "examples": [
+      {
+        "post_id": "21376810_gab",
+        "text": "exactly if a low iq nigger from africa who can not read can understand islam i think i can understand kill the kuffar nothing subtle lost on me",
+        "n_tokens": "28",
+        "n_annotators": "3"
+      },
+      {
+        "post_id": "1080843707643944965_twitter",
+        "text": "<user> yes because it is and i sound so broken bitch when did i have feelings",
+        "n_tokens": "16",
+        "n_annotators": "3"
+      },
+      {
+        "post_id": "1178183797461811200_twitter",
+        "text": "a white man tired to slide the phase i was the nigger when describing his up bringing in japan tonight at dinner white privilege continues to be heavy people have such low level of compassion no one i",
+        "n_tokens": "42",
+        "n_annotators": "3"
+      }
+    ]
+  },
+  "annotation_structure": {
+    "annotators_per_post": {
+      "3": 20148
+    },
+    "annotator_label_vocabulary": {
+      "normal": 24449,
+      "hatespeech": 18070,
+      "offensive": 17925
+    },
+    "agreement": {
+      "unanimous": 9845,
+      "majority": 9384,
+      "no majority (tie)": 919
+    },
+    "pct_unanimous": 48.86,
+    "n_ties_no_majority": 919,
+    "majority_label_distribution_excluding_ties": {
+      "normal": 7814,
+      "hatespeech": 5935,
+      "offensive": 5480
+    },
+    "target_vocabulary": {
+      "None": 21314,
+      "African": 10015,
+      "Islam": 6686,
+      "Women": 6126,
+      "Jewish": 5961,
+      "Homosexual": 5617,
+      "Other": 4708,
+      "Refugee": 3100,
+      "Arab": 2907,
+      "Caucasian": 2359,
+      "Men": 1758,
+      "Asian": 1350,
+      "Hispanic": 1299,
+      "Christian": 270,
+      "Disability": 221,
+      "Minority": 188,
+      "Heterosexual": 141,
+      "Economic": 90,
+      "Hindu": 89,
+      "Nonreligious": 87,
+      "Indigenous": 83,
+      "Indian": 81,
+      "<none>": 12,
+      "Buddhism": 12,
+      "Bisexual": 8,
+      "Asexual": 5
+    },
+    "n_target_categories": 26,
+    "posts_with_rationales": 11415,
+    "pct_with_rationales": 56.66
+  },
+  "open_decisions": [
+    "How to resolve multi-annotator disagreement (majority vote vs keeping soft labels).",
+    "Whether the `offensive` class maps to harmful, to safe, or is excluded. This is the single largest lever on the binary label distribution and is NOT decided here.",
+    "How to handle the 919 posts with no majority label."
+  ],
+  "official_splits": {
+    "path": "data/raw/HateXplain-master/Data/post_id_divisions.json",
+    "sizes": {
+      "test": 1924,
+      "train": 15383,
+      "val": 1922
+    },
+    "total_assigned": 19229,
+    "unassigned_posts": 919,
+    "overlap_between_splits": 0
+  }
+}

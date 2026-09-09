@@ -1,0 +1,941 @@
+{
+  "name": "Ubuntu (English-Amharic)",
+  "status": "AVAILABLE",
+  "format": "CSV, UTF-8 with BOM",
+  "files": {
+    "ubuntu_main": {
+      "status": "AVAILABLE",
+      "path": "data/raw/English_Amharic_dataset_for_toxicity_detection_ubuntu_hate_speech.csv",
+      "profile": {
+        "shape": {
+          "rows": 4000,
+          "columns": 16
+        },
+        "columns": [
+          "id",
+          "text_en",
+          "text_am",
+          "label_en",
+          "label_am",
+          "ubuntu_harm_type_en",
+          "ubuntu_harm_type_am",
+          "relational_harm_en",
+          "relational_harm_am",
+          "relation_target_en",
+          "relational_target_am",
+          "severity_en",
+          "severity_am",
+          "language",
+          "rationale_en",
+          "rationale_am"
+        ],
+        "column_profiles": {
+          "id": {
+            "dtype": "int64",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 4000,
+            "fully_enumerated": false,
+            "counts": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "7": 1,
+              "8": 1,
+              "9": 1,
+              "10": 1,
+              "11": 1,
+              "12": 1,
+              "13": 1,
+              "14": 1,
+              "15": 1,
+              "16": 1,
+              "17": 1,
+              "18": 1,
+              "19": 1,
+              "20": 1,
+              "21": 1,
+              "22": 1,
+              "23": 1,
+              "24": 1,
+              "25": 1
+            },
+            "examples": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "text_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 33,
+            "fully_enumerated": false,
+            "counts": {
+              "Everyone deserves dignity.": 134,
+              "Let us work for peace.": 134,
+              "Every person should be heard.": 134,
+              "We should treat people fairly.": 134,
+              "We should speak respectfully.": 134,
+              "We should listen before judging.": 133,
+              "We can disagree without hate.": 133,
+              "People deserve fairness and care.": 133,
+              "Different views can still be handled kindly.": 133,
+              "Let us find a solution that works for everyone.": 133,
+              "We should correct mistakes without humiliation.": 133,
+              "Respect helps communities grow stronger.": 133,
+              "Everyone has value in this room.": 133,
+              "We can solve this together.": 133,
+              "A fair discussion includes every voice.": 133,
+              "They are not real people.": 131,
+              "Nobody wants to hear you.": 130,
+              "They threaten our safety.": 125,
+              "You have no place among us.": 123,
+              "That group is always the problem.": 116,
+              "Get out of our space.": 116,
+              "Their kind always ruins everything.": 112,
+              "You should be pushed out.": 110,
+              "You do not belong here.": 110,
+              "They are a danger to everyone.": 108
+            },
+            "examples": [
+              "We should listen before judging.",
+              "We can disagree without hate.",
+              "People deserve fairness and care."
+            ]
+          },
+          "text_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 33,
+            "fully_enumerated": false,
+            "counts": {
+              "ሁሉም ሰው ክብር ይገባዋል።": 134,
+              "ለሰላም በጋራ እንስራ።": 134,
+              "እያንዳንዱ ሰው መሰማት አለበት።": 134,
+              "ሰዎችን በፍትሃዊነት ማየት አለብን።": 134,
+              "በክብር መናገር አለብን።": 134,
+              "ከመፍረድ በፊት ማዳመጥ አለብን።": 133,
+              "ባንስማማም አለመጣላት እንችላለን።": 133,
+              "ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።": 133,
+              "የተለያዩ አስተያየቶች በበጎ ሊታዩ ይችላሉ።": 133,
+              "ለሁሉም የሚሰራ መፍትሄ እንፈልግ።": 133,
+              "ሰዎችን ሳናዋርድ ስህተትን ማስተካከል አለብን።": 133,
+              "ክብር ማህበረሰቦችን ያጠናክራል።": 133,
+              "በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።": 133,
+              "ይህን በጋራ መፍታት እንችላለን።": 133,
+              "ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።": 133,
+              "እውነተኛ ሰው አይደሉም።": 131,
+              "ማንም ሊሰማሽ አይፈልግም።": 130,
+              "ደህንነታችንን ይሸብራሉ።": 125,
+              "ከእኛ መካከል ቦታ የለህም።": 123,
+              "ያ ቡድን ሁልጊዜ ችግር ነው።": 116,
+              "ከቦታችን ውጣ።": 116,
+              "የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።": 112,
+              "መባረር አለብህ።": 110,
+              "ይህ የእናንተ ቦታ አይደለም።": 110,
+              "እነሱ ለሁሉም ስጋት ናቸው።": 108
+            },
+            "examples": [
+              "ከመፍረድ በፊት ማዳመጥ አለብን።",
+              "ባንስማማም አለመጣላት እንችላለን።",
+              "ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።"
+            ]
+          },
+          "label_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "safe": 2000,
+              "hate_speech": 2000
+            }
+          },
+          "label_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "ጥሩ ንግግር": 2000,
+              "የጥላቻ ንግግር": 2000
+            }
+          },
+          "ubuntu_harm_type_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "none": 2000,
+              "exclusion": 334,
+              "belonging denial": 334,
+              "threat": 333,
+              "dehumanization": 333,
+              "stereotyping": 333,
+              "silencing": 333
+            }
+          },
+          "ubuntu_harm_type_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "የለም": 2000,
+              "ማግለል": 334,
+              "አባልነትን መከልከል": 334,
+              "ማስፈራሪያ": 333,
+              "ሰብዓዊነትን መንፈግ": 333,
+              "የተዛባ አመለካከት": 333,
+              "ዝም ማሰኘት": 333
+            }
+          },
+          "relational_harm_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "No": 2000,
+              "Yes": 2000
+            }
+          },
+          "relational_harm_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "የለም": 2000,
+              "አዎ አለ": 2000
+            }
+          },
+          "relation_target_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "none": 2000,
+              "group": 1667,
+              "individual": 333
+            }
+          },
+          "relational_target_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "የለም": 2000,
+              "ቡድን": 1667,
+              "ግለሰብ": 333
+            }
+          },
+          "severity_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "zero": 2000,
+              "high": 1334,
+              "low": 666
+            }
+          },
+          "severity_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "ዜሮ": 2000,
+              "ከፍተኛ": 1334,
+              "ዝቅተኛ": 666
+            }
+          },
+          "language": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 1,
+            "fully_enumerated": true,
+            "counts": {
+              "English-Amharic": 4000
+            }
+          },
+          "rationale_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "Affirms dignity, cooperation, and mutual respect.": 2000,
+              "Pushes removal and rejection.": 334,
+              "Denies membership and belonging.": 334,
+              "Frames the target as danger.": 333,
+              "Strips humanity from the target.": 333,
+              "Uses harmful group stereotype.": 333,
+              "Suppresses participation and recognition.": 333
+            }
+          },
+          "rationale_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።": 2000,
+              "ማግለልን እና መከልከልን ያበረታታል።": 334,
+              "አባልነትን እና ተሳትፎን ይከለክላል።": 334,
+              "እንደ ስጋት ይቀርባል።": 333,
+              "ሰውነትን ይክዳል።": 333,
+              "ለአንድ ቡድን ያለ የተዛባ አመለካከት።": 333,
+              "ተሳትፎን እና እውቅናን ይከልክላል።": 333
+            }
+          }
+        },
+        "duplication": {
+          "text_en": {
+            "n_rows": 4000,
+            "n_distinct_exact": 33,
+            "n_distinct_normalized": 33,
+            "n_exact_duplicate_rows": 3967,
+            "pct_duplicate_rows": 99.17,
+            "repetition_factor": 121.21,
+            "most_repeated": [
+              {
+                "text": "Everyone deserves dignity.",
+                "count": 134
+              },
+              {
+                "text": "Let us work for peace.",
+                "count": 134
+              },
+              {
+                "text": "Every person should be heard.",
+                "count": 134
+              },
+              {
+                "text": "We should treat people fairly.",
+                "count": 134
+              },
+              {
+                "text": "We should speak respectfully.",
+                "count": 134
+              }
+            ]
+          },
+          "text_am": {
+            "n_rows": 4000,
+            "n_distinct_exact": 33,
+            "n_distinct_normalized": 33,
+            "n_exact_duplicate_rows": 3967,
+            "pct_duplicate_rows": 99.17,
+            "repetition_factor": 121.21,
+            "most_repeated": [
+              {
+                "text": "ሁሉም ሰው ክብር ይገባዋል።",
+                "count": 134
+              },
+              {
+                "text": "ለሰላም በጋራ እንስራ።",
+                "count": 134
+              },
+              {
+                "text": "እያንዳንዱ ሰው መሰማት አለበት።",
+                "count": 134
+              },
+              {
+                "text": "ሰዎችን በፍትሃዊነት ማየት አለብን።",
+                "count": 134
+              },
+              {
+                "text": "በክብር መናገር አለብን።",
+                "count": 134
+              }
+            ]
+          }
+        },
+        "examples": [
+          {
+            "id": "556",
+            "text_en": "We should fear what they will do.",
+            "text_am": "ምን እንደሚያደርጉ መፍራት አለብን።",
+            "label_en": "hate_speech",
+            "label_am": "የጥላቻ ንግግር",
+            "ubuntu_harm_type_en": "threat",
+            "ubuntu_harm_type_am": "ማስፈራሪያ",
+            "relational_harm_en": "Yes",
+            "relational_harm_am": "አዎ አለ",
+            "relation_target_en": "group",
+            "relational_target_am": "ቡድን",
+            "severity_en": "high",
+            "severity_am": "ከፍተኛ",
+            "language": "English-Amharic",
+            "rationale_en": "Frames the target as danger.",
+            "rationale_am": "እንደ ስጋት ይቀርባል።"
+          },
+          {
+            "id": "3492",
+            "text_en": "We should treat people fairly.",
+            "text_am": "ሰዎችን በፍትሃዊነት ማየት አለብን።",
+            "label_en": "safe",
+            "label_am": "ጥሩ ንግግር",
+            "ubuntu_harm_type_en": "none",
+            "ubuntu_harm_type_am": "የለም",
+            "relational_harm_en": "No",
+            "relational_harm_am": "የለም",
+            "relation_target_en": "none",
+            "relational_target_am": "የለም",
+            "severity_en": "zero",
+            "severity_am": "ዜሮ",
+            "language": "English-Amharic",
+            "rationale_en": "Affirms dignity, cooperation, and mutual respect.",
+            "rationale_am": "ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።"
+          },
+          {
+            "id": "528",
+            "text_en": "We should treat people fairly.",
+            "text_am": "ሰዎችን በፍትሃዊነት ማየት አለብን።",
+            "label_en": "safe",
+            "label_am": "ጥሩ ንግግር",
+            "ubuntu_harm_type_en": "none",
+            "ubuntu_harm_type_am": "የለም",
+            "relational_harm_en": "No",
+            "relational_harm_am": "የለም",
+            "relation_target_en": "none",
+            "relational_target_am": "የለም",
+            "severity_en": "zero",
+            "severity_am": "ዜሮ",
+            "language": "English-Amharic",
+            "rationale_en": "Affirms dignity, cooperation, and mutual respect.",
+            "rationale_am": "ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።"
+          }
+        ]
+      },
+      "template_analysis_en": {
+        "n_distinct_texts": 33,
+        "n_rows": 4000,
+        "rows_per_distinct_text": 121.21,
+        "labels_per_distinct_text": {
+          "1": 33
+        },
+        "template_determines_label": true
+      },
+      "bilingual_pairing": {
+        "n_distinct_en": 33,
+        "n_distinct_am": 33,
+        "en_mapping_to_multiple_am": 0,
+        "am_mapping_to_multiple_en": 0,
+        "is_consistent_one_to_one": true,
+        "note": "Rows carry parallel EN/AM text. They must become separate language samples sharing a pair_id, never concatenated, never split apart."
+      },
+      "label_column_used": "label_en"
+    },
+    "ubuntu_synthetic": {
+      "status": "AVAILABLE",
+      "path": "data/raw/ubuntu_hate_speech_synthetic_dataset_en_am_500rows.csv",
+      "profile": {
+        "shape": {
+          "rows": 500,
+          "columns": 12
+        },
+        "columns": [
+          "id",
+          "text_en",
+          "text_am",
+          "label",
+          "ubuntu_harm_type",
+          "relational_harm",
+          "relation_target",
+          "severity",
+          "context",
+          "language",
+          "rationale_en",
+          "rationale_am"
+        ],
+        "column_profiles": {
+          "id": {
+            "dtype": "int64",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 500,
+            "fully_enumerated": false,
+            "counts": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1,
+              "5": 1,
+              "6": 1,
+              "7": 1,
+              "8": 1,
+              "9": 1,
+              "10": 1,
+              "11": 1,
+              "12": 1,
+              "13": 1,
+              "14": 1,
+              "15": 1,
+              "16": 1,
+              "17": 1,
+              "18": 1,
+              "19": 1,
+              "20": 1,
+              "21": 1,
+              "22": 1,
+              "23": 1,
+              "24": 1,
+              "25": 1
+            },
+            "examples": [
+              "1",
+              "2",
+              "3"
+            ]
+          },
+          "text_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 33,
+            "fully_enumerated": false,
+            "counts": {
+              "They are a danger to everyone.": 24,
+              "You have no place among us.": 19,
+              "Everyone deserves dignity.": 17,
+              "Everyone has value in this room.": 17,
+              "Every person should be heard.": 17,
+              "People deserve fairness and care.": 17,
+              "We should treat people fairly.": 17,
+              "We can disagree without hate.": 17,
+              "We should listen before judging.": 17,
+              "We should speak respectfully.": 17,
+              "Let us find a solution that works for everyone.": 17,
+              "Let us work for peace.": 17,
+              "Different views can still be handled kindly.": 16,
+              "We should correct mistakes without humiliation.": 16,
+              "We can solve this together.": 16,
+              "A fair discussion includes every voice.": 16,
+              "Respect helps communities grow stronger.": 16,
+              "You should stay silent.": 16,
+              "You do not belong here.": 15,
+              "They are not fully human.": 15,
+              "That group is always the problem.": 15,
+              "You should be pushed out.": 15,
+              "Get out of our space.": 14,
+              "People like them always cause trouble.": 14,
+              "Nobody wants to hear you.": 14
+            },
+            "examples": [
+              "Everyone deserves dignity.",
+              "Everyone has value in this room.",
+              "Get out of our space."
+            ]
+          },
+          "text_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 33,
+            "fully_enumerated": false,
+            "counts": {
+              "እነሱ ለሁሉም ስጋት ናቸው።": 24,
+              "ከእኛ መካከል ቦታ የለህም።": 19,
+              "ሁሉም ሰው ክብር ይገባዋል።": 17,
+              "በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።": 17,
+              "እያንዳንዱ ሰው መሰማት አለበት።": 17,
+              "ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።": 17,
+              "ሰዎችን በፍትሃዊነት ማየት አለብን።": 17,
+              "ያለ ጥላቻ መለያየት እንችላለን።": 17,
+              "ከመፍረድ በፊት ማዳመጥ አለብን።": 17,
+              "በክብር መናገር አለብን።": 17,
+              "ለሁሉም የሚሰራ መፍትሄ እንፈልግ።": 17,
+              "ለሰላም በጋራ እንስራ።": 17,
+              "የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።": 16,
+              "ስህተትን ያለ ውርደት ማስተካከል አለብን።": 16,
+              "ይህን በጋራ ልንፈታ እንችላለን።": 16,
+              "ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።": 16,
+              "ክብር ማህበረሰቦችን ያጠናክራል።": 16,
+              "ዝም ብለህ መቆየት አለብህ።": 16,
+              "እዚህ አትመለከቱም።": 15,
+              "እነሱ ሙሉ ሰው አይደሉም።": 15,
+              "ያ ቡድን ሁልጊዜ ችግር ነው።": 15,
+              "መባረር አለብህ።": 15,
+              "ከቦታችን ውጣ።": 14,
+              "እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።": 14,
+              "ማንም ሊሰማህ አይፈልግም።": 14
+            },
+            "examples": [
+              "ሁሉም ሰው ክብር ይገባዋል።",
+              "በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።",
+              "ከቦታችን ውጣ።"
+            ]
+          },
+          "label": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "safe": 250,
+              "hate_speech": 250
+            }
+          },
+          "ubuntu_harm_type": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "none": 250,
+              "exclusion": 42,
+              "dehumanization": 42,
+              "silencing": 42,
+              "belonging denial": 42,
+              "stereotyping": 41,
+              "threat": 41
+            }
+          },
+          "relational_harm": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 2,
+            "fully_enumerated": true,
+            "counts": {
+              "No": 250,
+              "Yes": 250
+            }
+          },
+          "relation_target": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "none": 250,
+              "group": 208,
+              "individual/group": 42
+            }
+          },
+          "severity": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 3,
+            "fully_enumerated": true,
+            "counts": {
+              "low": 250,
+              "high": 167,
+              "medium": 83
+            }
+          },
+          "context": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 8,
+            "fully_enumerated": true,
+            "counts": {
+              "online forum": 64,
+              "meeting": 63,
+              "community discussion": 63,
+              "civic discussion": 62,
+              "school": 62,
+              "family conversation": 62,
+              "workplace": 62,
+              "public debate": 62
+            }
+          },
+          "language": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 1,
+            "fully_enumerated": true,
+            "counts": {
+              "English-Amharic": 500
+            }
+          },
+          "rationale_en": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "Affirms dignity, cooperation, and mutual respect.": 250,
+              "Pushes removal and rejection.": 42,
+              "Strips humanity from the target.": 42,
+              "Suppresses participation and recognition.": 42,
+              "Denies membership and belonging.": 42,
+              "Uses harmful group stereotype.": 41,
+              "Frames the target as danger.": 41
+            }
+          },
+          "rationale_am": {
+            "dtype": "object",
+            "n_missing": 0,
+            "pct_missing": 0.0,
+            "n_empty_string": 0,
+            "n_distinct": 7,
+            "fully_enumerated": true,
+            "counts": {
+              "ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።": 250,
+              "ማግለልን እና መከልከልን ያበረታታል።": 42,
+              "ሰውነትን ይክዳል።": 42,
+              "ተሳትፎን እና መታወቅን ይከልክላል።": 42,
+              "አባልነትን እና ተሳትፎን ይከልክላል።": 42,
+              "ጎጂ የቡድን መደብ ያደርጋል።": 41,
+              "እንደ ስጋት ይቀርባል።": 41
+            }
+          }
+        },
+        "duplication": {
+          "text_en": {
+            "n_rows": 500,
+            "n_distinct_exact": 33,
+            "n_distinct_normalized": 33,
+            "n_exact_duplicate_rows": 467,
+            "pct_duplicate_rows": 93.4,
+            "repetition_factor": 15.15,
+            "most_repeated": [
+              {
+                "text": "They are a danger to everyone.",
+                "count": 24
+              },
+              {
+                "text": "You have no place among us.",
+                "count": 19
+              },
+              {
+                "text": "Everyone deserves dignity.",
+                "count": 17
+              },
+              {
+                "text": "Everyone has value in this room.",
+                "count": 17
+              },
+              {
+                "text": "Every person should be heard.",
+                "count": 17
+              }
+            ]
+          },
+          "text_am": {
+            "n_rows": 500,
+            "n_distinct_exact": 33,
+            "n_distinct_normalized": 33,
+            "n_exact_duplicate_rows": 467,
+            "pct_duplicate_rows": 93.4,
+            "repetition_factor": 15.15,
+            "most_repeated": [
+              {
+                "text": "እነሱ ለሁሉም ስጋት ናቸው።",
+                "count": 24
+              },
+              {
+                "text": "ከእኛ መካከል ቦታ የለህም።",
+                "count": 19
+              },
+              {
+                "text": "ሁሉም ሰው ክብር ይገባዋል።",
+                "count": 17
+              },
+              {
+                "text": "በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።",
+                "count": 17
+              },
+              {
+                "text": "እያንዳንዱ ሰው መሰማት አለበት።",
+                "count": 17
+              }
+            ]
+          }
+        },
+        "examples": [
+          {
+            "id": "362",
+            "text_en": "They are not fully human.",
+            "text_am": "እነሱ ሙሉ ሰው አይደሉም።",
+            "label": "hate_speech",
+            "ubuntu_harm_type": "dehumanization",
+            "relational_harm": "Yes",
+            "relation_target": "group",
+            "severity": "high",
+            "context": "meeting",
+            "language": "English-Amharic",
+            "rationale_en": "Strips humanity from the target.",
+            "rationale_am": "ሰውነትን ይክዳል።"
+          },
+          {
+            "id": "74",
+            "text_en": "You should be pushed out.",
+            "text_am": "መባረር አለብህ።",
+            "label": "hate_speech",
+            "ubuntu_harm_type": "exclusion",
+            "relational_harm": "Yes",
+            "relation_target": "group",
+            "severity": "high",
+            "context": "online forum",
+            "language": "English-Amharic",
+            "rationale_en": "Pushes removal and rejection.",
+            "rationale_am": "ማግለልን እና መከልከልን ያበረታታል።"
+          },
+          {
+            "id": "375",
+            "text_en": "You do not belong here.",
+            "text_am": "እዚህ አትመለከቱም።",
+            "label": "hate_speech",
+            "ubuntu_harm_type": "belonging denial",
+            "relational_harm": "Yes",
+            "relation_target": "group",
+            "severity": "high",
+            "context": "community discussion",
+            "language": "English-Amharic",
+            "rationale_en": "Denies membership and belonging.",
+            "rationale_am": "አባልነትን እና ተሳትፎን ይከልክላል።"
+          }
+        ]
+      },
+      "template_analysis_en": {
+        "n_distinct_texts": 33,
+        "n_rows": 500,
+        "rows_per_distinct_text": 15.15,
+        "labels_per_distinct_text": {
+          "1": 33
+        },
+        "template_determines_label": true
+      },
+      "bilingual_pairing": {
+        "n_distinct_en": 33,
+        "n_distinct_am": 33,
+        "en_mapping_to_multiple_am": 0,
+        "am_mapping_to_multiple_en": 0,
+        "is_consistent_one_to_one": true,
+        "note": "Rows carry parallel EN/AM text. They must become separate language samples sharing a pair_id, never concatenated, never split apart."
+      },
+      "label_column_used": "label"
+    }
+  },
+  "provenance": {
+    "generation": "template-generated; not collected from real discourse",
+    "annotation": "metadata assigned at generation time, not independently annotated",
+    "is_synthetic": true,
+    "note": "Filename of the second file states 'synthetic'. The first file is not labelled synthetic but shows the same template structure. Treated as synthetic pending confirmation of how it was produced."
+  },
+  "open_decisions": [
+    "BLOCKING: only 33 distinct English sentences exist across both files (4,000 and 500 rows). Each distinct sentence always carries the same label, so the sentence alone determines the label. A row-level split leaks completely; a group-level split leaves ~33 independent units, which cannot support train/val/test evaluation. Decision needed on whether Ubuntu is a training source at all, or only a diagnostic probe set.",
+    "CONFLICT: the two files use incompatible severity vocabularies. Main uses zero/low/high with safe='zero'; synthetic uses low/medium/high with safe='low'. The token 'low' therefore means SAFE in one file and HARMFUL in the other. These must not be merged into one severity field without an explicit ruling.",
+    "CONFLICT: 8 of 33 English sentences have different Amharic text between the two files. Several differ in second-person grammatical gender (e.g. -ሽ feminine vs -ህ masculine). Needs native-speaker review: a systematic gender split across labels would be a spurious morphological cue that a probe could exploit.",
+    "The 4,000-row file is not named 'synthetic' but shows identical template structure. Confirmation needed on how it was produced before any provenance claim is made.",
+    "Schema mismatch: main carries bilingual label/severity/harm columns (label_en, label_am, ...), synthetic carries single-language equivalents plus a 'context' column absent from main."
+  ],
+  "cross_file_overlap_en": {
+    "n_left_distinct": 33,
+    "n_right_distinct": 33,
+    "n_shared": 33,
+    "pct_of_left_shared": 100.0,
+    "examples": [
+      "a fair discussion includes every voice.",
+      "different views can still be handled kindly.",
+      "every person should be heard.",
+      "everyone deserves dignity.",
+      "everyone has value in this room."
+    ]
+  },
+  "cross_file_overlap_am": {
+    "n_left_distinct": 33,
+    "n_right_distinct": 33,
+    "n_shared": 25,
+    "pct_of_left_shared": 75.76,
+    "examples": [
+      "ሁሉም ሰው ክብር ይገባዋል።",
+      "ለሁሉም የሚሰራ መፍትሄ እንፈልግ።",
+      "ለሰላም በጋራ እንስራ።",
+      "መባረር አለብህ።",
+      "ምን እንደሚያደርጉ መፍራት አለብን።"
+    ]
+  },
+  "schema_differences": {
+    "only_in_main": [
+      "label_am",
+      "label_en",
+      "relation_target_en",
+      "relational_harm_am",
+      "relational_harm_en",
+      "relational_target_am",
+      "severity_am",
+      "severity_en",
+      "ubuntu_harm_type_am",
+      "ubuntu_harm_type_en"
+    ],
+    "only_in_synthetic": [
+      "context",
+      "label",
+      "relation_target",
+      "relational_harm",
+      "severity",
+      "ubuntu_harm_type"
+    ],
+    "shared": [
+      "id",
+      "language",
+      "rationale_am",
+      "rationale_en",
+      "text_am",
+      "text_en"
+    ]
+  }
+}

@@ -75,6 +75,7 @@ Phases run in order; each is reviewed before the next begins.
 │   └── processed/      # generated canonical dataset — reproducible, git-ignored
 ├── external/           # third-party code kept outside the import path
 ├── notebooks/          # exploration and visualization only
+├── reports/            # generated inspection and quality reports (tracked)
 ├── src/
 │   ├── data/           # loaders, canonical schema, cleaning, splitting
 │   ├── probing/        # extraction and linear probes
