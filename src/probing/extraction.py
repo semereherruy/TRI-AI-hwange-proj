@@ -89,7 +89,7 @@ def extract(
     * Pooled vectors are cast to the output dtype on the GPU before transfer,
       halving the amount of data crossing the bus.
     """
-    from transformers import AutoModel, AutoTokenizer
+    from transformers import AutoModelForCausalLM, AutoTokenizer
 
     model_config = config["model"]
     extraction_config = config["extraction"]
@@ -100,9 +100,24 @@ def extract(
         tokenizer.pad_token = tokenizer.eos_token
 
     dtype = getattr(torch, model_config["dtype"]) if device.type == "cuda" else torch.float32
-    model = AutoModel.from_pretrained(
-        model_config["checkpoint"], dtype=dtype, output_hidden_states=True
+    # AutoModel maps Gemma to Gemma3TextModel, but the checkpoint stores its tensors
+    # under a `model.` prefix. Nothing matches, transformers silently returns a
+    # RANDOMLY INITIALIZED network, and extraction produces a plausible-looking layer
+    # curve from noise. Loading the CausalLM class matches the checkpoint layout.
+    model, loading_info = AutoModelForCausalLM.from_pretrained(
+        model_config["checkpoint"],
+        dtype=dtype,
+        output_hidden_states=True,
+        output_loading_info=True,
     )
+    # Fail loudly rather than extract from untrained weights.
+    missing = loading_info.get("missing_keys") or []
+    if missing:
+        raise RuntimeError(
+            f"{len(missing)} weights were not loaded from {model_config['checkpoint']} and would be "
+            f"randomly initialized (e.g. {missing[:3]}). Refusing to extract from an untrained model."
+        )
+    logger.info("checkpoint loaded with all weights matched (0 missing keys)")
     model.eval().to(device)
     for parameter in model.parameters():  # frozen: no fine-tuning in this phase
         parameter.requires_grad_(False)
