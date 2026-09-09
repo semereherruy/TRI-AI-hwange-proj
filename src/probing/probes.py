@@ -178,7 +178,11 @@ def layer_curve(results: dict[str, Any], split: str = "test", metric: str = "f1"
                 "roc_auc": per_split[split].get("roc_auc"),
             }
         )
-    return pd.DataFrame(rows).sort_values(["pooling", "layer"])
+    columns = ["layer", "pooling", metric, "roc_auc"]
+    if not rows:
+        logger.warning("no probe results for split %r — nothing to plot", split)
+        return pd.DataFrame(columns=columns)
+    return pd.DataFrame(rows, columns=columns).sort_values(["pooling", "layer"])
 
 
 def main() -> None:
