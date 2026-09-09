@@ -104,20 +104,53 @@ def extract(
     # under a `model.` prefix. Nothing matches, transformers silently returns a
     # RANDOMLY INITIALIZED network, and extraction produces a plausible-looking layer
     # curve from noise. Loading the CausalLM class matches the checkpoint layout.
-    model, loading_info = AutoModelForCausalLM.from_pretrained(
-        model_config["checkpoint"],
-        dtype=dtype,
-        output_hidden_states=True,
-        output_loading_info=True,
-    )
-    # Fail loudly rather than extract from untrained weights.
-    missing = loading_info.get("missing_keys") or []
-    if missing:
+    #
+    # transformers 4.x and 5.x differ on both the dtype keyword and support for
+    # output_loading_info, so each is attempted and degraded rather than assumed.
+    load_kwargs: dict[str, Any] = {"output_hidden_states": True}
+    loading_info: Optional[dict] = None
+    model = None
+    for dtype_kw in ("dtype", "torch_dtype"):
+        try:
+            model, loading_info = AutoModelForCausalLM.from_pretrained(
+                model_config["checkpoint"],
+                **{dtype_kw: dtype},
+                **load_kwargs,
+                output_loading_info=True,
+            )
+            break
+        except TypeError as exc:
+            logger.debug("load with %s + output_loading_info failed: %s", dtype_kw, exc)
+    if model is None:
+        for dtype_kw in ("dtype", "torch_dtype"):
+            try:
+                model = AutoModelForCausalLM.from_pretrained(
+                    model_config["checkpoint"], **{dtype_kw: dtype}, **load_kwargs
+                )
+                break
+            except TypeError as exc:
+                logger.debug("load with %s failed: %s", dtype_kw, exc)
+    if model is None:
         raise RuntimeError(
-            f"{len(missing)} weights were not loaded from {model_config['checkpoint']} and would be "
-            f"randomly initialized (e.g. {missing[:3]}). Refusing to extract from an untrained model."
+            f"could not load {model_config['checkpoint']} with any supported dtype keyword"
         )
-    logger.info("checkpoint loaded with all weights matched (0 missing keys)")
+
+    # Fail loudly rather than extract from untrained weights.
+    if loading_info is not None:
+        missing = loading_info.get("missing_keys") or []
+        if missing:
+            raise RuntimeError(
+                f"{len(missing)} weights were not loaded from {model_config['checkpoint']} and would "
+                f"be randomly initialized (e.g. {missing[:3]}). Refusing to extract from an "
+                f"untrained model."
+            )
+        logger.info("checkpoint loaded with all weights matched (0 missing keys)")
+    else:
+        logger.warning(
+            "this transformers version did not return loading info; the "
+            "randomly-initialized-weights guard is INACTIVE for this run"
+        )
+
     model.eval().to(device)
     for parameter in model.parameters():  # frozen: no fine-tuning in this phase
         parameter.requires_grad_(False)
