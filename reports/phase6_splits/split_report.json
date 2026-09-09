@@ -1,17 +1,23 @@
 {
   "seed": 42,
   "per_source": {
+    "afrihate": {
+      "strategy": "official splits, made group-consistent",
+      "n_rows": 4958,
+      "n_groups": 4954,
+      "n_groups_reassigned": 2
+    },
     "hatexplain": {
       "strategy": "official splits, made group-consistent",
       "n_rows": 19229,
       "n_groups": 19192,
-      "n_groups_reassigned": 7
+      "n_groups_reassigned": 9
     },
     "toxigen": {
       "strategy": "official splits, made group-consistent",
       "n_rows": 9900,
       "n_groups": 9724,
-      "n_groups_reassigned": 181
+      "n_groups_reassigned": 183
     },
     "ubuntu": {
       "strategy": "held out entirely as a probe set",
@@ -21,6 +27,25 @@
     }
   },
   "official_split_conflicts": [
+    {
+      "group_id": "g_2df9e9b42ef4",
+      "spanned": {
+        "train": 1,
+        "test": 1
+      },
+      "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_8cba890686de",
+      "spanned": {
+        "train": 1,
+        "val": 1,
+        "test": 1
+      },
+      "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
     {
       "group_id": "g_00a849611eb2",
       "spanned": {
@@ -1660,27 +1685,31 @@
   },
   "evaluation_views": {
     "in_domain": {
-      "train": 24169,
-      "val": 1923,
-      "test": 3037
+      "train": 27639,
+      "val": 2666,
+      "test": 3782
     },
     "cross_source": {
+      "afrihate": 745,
       "hatexplain": 1923,
       "toxigen": 1114,
       "ubuntu": 0
     },
     "african_language": {
-      "amh": 4500
+      "amh": 9458
     },
     "ubuntu_probe": 9000
   },
   "split_sizes": {
-    "train": 24169,
+    "train": 27639,
     "probe": 9000,
-    "test": 3037,
-    "val": 1923
+    "test": 3782,
+    "val": 2666
   },
   "split_by_source": {
+    "afrihate/test": 745,
+    "afrihate/train": 3470,
+    "afrihate/val": 743,
     "hatexplain/test": 1923,
     "hatexplain/train": 15383,
     "hatexplain/val": 1923,

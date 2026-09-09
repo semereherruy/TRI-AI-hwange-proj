@@ -1,30 +1,36 @@
 {
-  "n_rows": 32649,
+  "n_rows": 43087,
   "empty_and_missing": {
     "empty_text_rows": 0,
     "null_text_rows": 0,
     "null_label_binary": 0,
     "missing_by_column": {
-      "harm_type": 23649,
-      "target_type": 23649,
-      "target_group": 9000,
-      "severity": 23649,
-      "severity_scheme": 23649,
-      "context": 31649,
-      "rationale": 23649,
-      "pair_id": 23649,
+      "is_ethnic_target": 4958,
+      "harm_type": 34087,
+      "target_type": 34087,
+      "target_group": 17849,
+      "severity": 34087,
+      "severity_scheme": 34087,
+      "context": 42087,
+      "rationale": 34087,
+      "pair_id": 34087,
       "official_split": 9000
     }
   },
   "duplicates": {
-    "exact_duplicate_rows": 9071,
-    "normalized_duplicate_rows": 9127,
+    "exact_duplicate_rows": 9087,
+    "normalized_duplicate_rows": 9143,
     "cross_source_duplicate_texts": 0,
     "cross_source_examples": [],
     "per_source": {
+      "afrihate": {
+        "n_rows": 4958,
+        "n_distinct_text": 4954,
+        "repetition_factor": 1.0
+      },
       "hatexplain": {
-        "n_rows": 13749,
-        "n_distinct_text": 13724,
+        "n_rows": 19229,
+        "n_distinct_text": 19192,
         "repetition_factor": 1.0
       },
       "toxigen": {
@@ -40,14 +46,14 @@
     }
   },
   "label_consistency": {
-    "n_groups": 23481,
-    "groups_with_conflicting_labels": 17,
+    "n_groups": 33903,
+    "groups_with_conflicting_labels": 21,
     "examples": [
+      "g_00a849611eb2",
       "g_1fd752e4d156",
+      "g_274655d22d61",
       "g_357cf637002d",
-      "g_401c946f275d",
-      "g_442daf6b0c4a",
-      "g_4e6c280de7f5"
+      "g_401c946f275d"
     ]
   },
   "bilingual_pairs": {
@@ -58,16 +64,16 @@
     "pairs_with_conflicting_labels": 0
   },
   "templates": {
-    "n_groups": 23481,
-    "n_groups_with_multiple_rows": 222,
+    "n_groups": 33903,
+    "n_groups_with_multiple_rows": 234,
     "largest_groups": [
       {
-        "group_id": "g_b0f54573ba58",
+        "group_id": "g_4c1bd0fc4d46",
         "n_rows": 302,
         "source": "ubuntu"
       },
       {
-        "group_id": "g_4c1bd0fc4d46",
+        "group_id": "g_c6158d34b9a3",
         "n_rows": 302,
         "source": "ubuntu"
       },
@@ -77,7 +83,7 @@
         "source": "ubuntu"
       },
       {
-        "group_id": "g_c6158d34b9a3",
+        "group_id": "g_b0f54573ba58",
         "n_rows": 302,
         "source": "ubuntu"
       },
@@ -88,24 +94,26 @@
       }
     ],
     "max_group_size": 302,
-    "pct_rows_in_multi_row_groups": 28.76
+    "pct_rows_in_multi_row_groups": 21.86
   },
   "distributions": {
     "by_source": {
-      "hatexplain": 13749,
+      "hatexplain": 19229,
       "toxigen": 9900,
-      "ubuntu": 9000
+      "ubuntu": 9000,
+      "afrihate": 4958
     },
     "by_language": {
-      "en": 28149,
-      "amh": 4500
+      "en": 33629,
+      "amh": 9458
     },
     "by_synthetic": {
-      "True": 18752,
-      "False": 13897
+      "False": 24335,
+      "True": 18752
     },
     "by_source_language": {
-      "hatexplain/en": 13749,
+      "afrihate/amh": 4958,
+      "hatexplain/en": 19229,
       "toxigen/en": 9900,
       "ubuntu/amh": 4500,
       "ubuntu/en": 4500

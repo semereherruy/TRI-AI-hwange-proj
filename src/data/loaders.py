@@ -283,14 +283,25 @@ def load_afrihate(config: dict[str, Any]) -> pd.DataFrame:
     if not policy.get("enabled"):
         logger.warning("AfriHate disabled in config (gated dataset — needs HF_TOKEN)")
         return schema.empty_frame()
-    if not (os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")):
-        logger.warning("AfriHate enabled but no HF_TOKEN in environment — skipping")
+    # get_token() checks HF_TOKEN, HUGGING_FACE_HUB_TOKEN and the machine-wide
+    # cache written by `hf auth login`, so no token needs to live in this repo.
+    try:
+        from huggingface_hub import get_token
+
+        has_token = bool(get_token())
+    except ImportError:
+        has_token = bool(os.environ.get("HF_TOKEN"))
+    if not has_token:
+        logger.warning("AfriHate enabled but no HuggingFace token found — run `hf auth login`")
         return schema.empty_frame()
 
     try:
         from datasets import load_dataset
     except ImportError:
         return schema.empty_frame()
+
+    label_map = policy["label_map"]
+    toxicity_type_map = policy.get("toxicity_type_map", {})
 
     rows: list[dict[str, Any]] = []
     for language in policy["languages"]:
@@ -306,8 +317,13 @@ def load_afrihate(config: dict[str, Any]) -> pd.DataFrame:
             if text_col is None or label_col is None:
                 logger.warning("AfriHate %s: unexpected columns %s", language, list(frame.columns))
                 continue
+            unknown = set(frame[label_col].unique()) - set(label_map)
+            if unknown:
+                # never guess at an unmapped class: leave it unlabelled and say so
+                logger.warning("AfriHate %s: unmapped labels left as null: %s", language, unknown)
             for index, record in frame.iterrows():
                 text = str(record[text_col])
+                original = str(record[label_col])
                 rows.append(
                     {
                         "sample_id": f"afrihate_{language}_{split_name}_{index}",
@@ -316,14 +332,16 @@ def load_afrihate(config: dict[str, Any]) -> pd.DataFrame:
                         "language": language,
                         "source": "afrihate",
                         "source_file": f"{language}/{split_name}",
-                        # label_binary intentionally null: mapping is an open decision
-                        "label_binary": None,
-                        "label_original": str(record[label_col]),
-                        "label_type": "human_annotated_source_vocabulary_unmapped",
+                        "label_binary": label_map.get(original),
+                        "label_original": original,
+                        "label_type": "human_annotated_native_speakers_3_way",
+                        "toxicity_type": toxicity_type_map.get(original),
+                        # AfriHate provides no target-group column
+                        "is_ethnic_target": None,
                         "is_synthetic": False,
                         "annotation_quality": "human_annotated",
                         "group_id": group_id_for(text),
-                        "official_split": split_name,
+                        "official_split": "val" if split_name == "validation" else split_name,
                     }
                 )
 

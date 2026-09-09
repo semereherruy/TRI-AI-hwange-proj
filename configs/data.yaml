@@ -81,7 +81,25 @@ ubuntu:
   drop_divergent_translations: false
 
 afrihate:
-  # Gated on the Hub. Requires licence acceptance plus HF_TOKEN in the
-  # environment or Colab Secrets. Set true once access is granted.
-  enabled: false
-  languages: [amh]           # Amharic, to pair with Ubuntu
+  # Access granted 2026-09-09. Reads the machine-wide HuggingFace token cache.
+  enabled: true
+  languages: [amh]           # Amharic; 15 subsets exist, see reports/phase2_inspection
+
+  # AfriHate's own vocabulary is Hate / Abuse / Normal.
+  #
+  # RULING NEEDED (default follows the Data Card). Data Card 2 and 5 define the
+  # toxic class as "hate speech, harassment, abuse, and offensive language", so
+  # `Abuse` maps to toxic -- the same reasoning that puts HateXplain's `offensive`
+  # inside the toxic class. Set Abuse to 0 if you want hate-only.
+  label_map:
+    Hate: 1
+    Abuse: 1
+    Normal: 0
+
+  # Sub-category tagging, so hate and abuse stay separable (Data Card 5).
+  toxicity_type_map:
+    Hate: hate_speech
+    Abuse: abuse
+    Normal: none
+
+  use_official_splits: true
