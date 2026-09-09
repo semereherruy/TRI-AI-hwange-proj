@@ -33,3 +33,6 @@ outputs/
 
 # Notebook noise
 .ipynb_checkpoints/
+
+# Probe results come from a GPU run; never commit smoke-test output as a result.
+reports/phase9_probes/
