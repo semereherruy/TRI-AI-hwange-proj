@@ -57,8 +57,13 @@ def pool_hidden_states(
     valid tokens only, so padding never dilutes the representation.
     """
     if strategy == "last_token":
-        lengths = attention_mask.sum(dim=1) - 1
-        return hidden[torch.arange(hidden.size(0), device=hidden.device), lengths]
+        # Gemma pads on the LEFT, so the final real token is not at sum(mask)-1.
+        # Locate the last position where the mask is 1, which is correct for either
+        # padding side. Getting this wrong reads a padding vector and silently
+        # produces meaningless representations.
+        flipped = attention_mask.flip(dims=[1])
+        last_index = attention_mask.shape[1] - 1 - flipped.argmax(dim=1)
+        return hidden[torch.arange(hidden.size(0), device=hidden.device), last_index]
     if strategy == "mean":
         mask = attention_mask.unsqueeze(-1).to(hidden.dtype)
         return (hidden * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
@@ -71,7 +76,19 @@ def extract(
     output_dir: Path,
     device: Optional[torch.device] = None,
 ) -> dict[str, Any]:
-    """Extract pooled hidden states for every row, writing one file per layer/pooling."""
+    """Extract pooled hidden states for every row, writing one file per layer/pooling.
+
+    Three things keep this affordable on a free Colab GPU:
+
+    * Results stream straight into on-disk memory-mapped arrays. Buffering every
+      layer in RAM would need ~10 GB for a 43k-row corpus at 28 layers, which does
+      not survive a 12.7 GB runtime alongside the model.
+    * Sequences are processed in length-sorted order, so batches pad to their own
+      longest member instead of to the longest in the corpus. Rows are written back
+      to their original positions, so `index.parquet` order is preserved exactly.
+    * Pooled vectors are cast to the output dtype on the GPU before transfer,
+      halving the amount of data crossing the bus.
+    """
     from transformers import AutoModel, AutoTokenizer
 
     model_config = config["model"]
@@ -84,7 +101,7 @@ def extract(
 
     dtype = getattr(torch, model_config["dtype"]) if device.type == "cuda" else torch.float32
     model = AutoModel.from_pretrained(
-        model_config["checkpoint"], torch_dtype=dtype, output_hidden_states=True
+        model_config["checkpoint"], dtype=dtype, output_hidden_states=True
     )
     model.eval().to(device)
     for parameter in model.parameters():  # frozen: no fine-tuning in this phase
@@ -93,65 +110,81 @@ def extract(
     poolings = list(extraction_config["poolings"])
     batch_size = int(model_config["batch_size"])
     max_length = int(model_config["max_length"])
-    buffers: dict[tuple[int, str], list[np.ndarray]] = {}
-    n_layers: Optional[int] = None
+    output_dtype = np.dtype(extraction_config["output_dtype"])
 
     texts = frame["text"].astype(str).tolist()
-    for start in tqdm(range(0, len(texts), batch_size), desc="extracting"):
-        batch = texts[start : start + batch_size]
+    n_samples = len(texts)
+    hidden_size = int(model.config.hidden_size)
+    n_layers = int(model.config.num_hidden_layers) + 1  # + the embedding layer
+    layer_indices = (
+        list(range(n_layers))
+        if extraction_config["layers"] == "all"
+        else list(extraction_config["layers"])
+    )
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    estimated_gb = n_samples * hidden_size * len(layer_indices) * len(poolings) * output_dtype.itemsize / 1024**3
+    logger.info(
+        "%d samples x %d layers x %d poolings x %d dims = %.1f GB on disk",
+        n_samples, len(layer_indices), len(poolings), hidden_size, estimated_gb,
+    )
+
+    # One memory-mapped array per (layer, pooling); RAM stays flat regardless of corpus size.
+    outputs: dict[tuple[int, str], np.memmap] = {}
+    for layer_index in layer_indices:
+        for pooling in poolings:
+            destination = output_dir / f"layer{layer_index:02d}_{pooling}.npy"
+            outputs[(layer_index, pooling)] = np.lib.format.open_memmap(
+                destination, mode="w+", dtype=output_dtype, shape=(n_samples, hidden_size)
+            )
+
+    # Length-sorted order: batches pad to their own longest member, not the corpus maximum.
+    lengths = [len(tokenizer(text, truncation=True, max_length=max_length)["input_ids"]) for text in texts]
+    order = np.argsort(np.asarray(lengths), kind="stable")
+
+    for start in tqdm(range(0, n_samples, batch_size), desc="extracting"):
+        positions = order[start : start + batch_size]
+        batch = [texts[i] for i in positions]
         encoded = tokenizer(
             batch, padding=True, truncation=True, max_length=max_length, return_tensors="pt"
         ).to(device)
 
         with torch.inference_mode():
-            outputs = model(**encoded)
-
-        hidden_states = outputs.hidden_states
-        if n_layers is None:
-            n_layers = len(hidden_states)
-            layer_indices = (
-                list(range(n_layers))
-                if extraction_config["layers"] == "all"
-                else list(extraction_config["layers"])
-            )
+            hidden_states = model(**encoded).hidden_states
 
         for layer_index in layer_indices:
             layer = hidden_states[layer_index]
             for pooling in poolings:
                 pooled = pool_hidden_states(layer, encoded["attention_mask"], pooling)
-                # move off the accelerator immediately; nothing accumulates in VRAM
-                buffers.setdefault((layer_index, pooling), []).append(
-                    pooled.to(torch.float32).cpu().numpy()
-                )
-        del outputs, hidden_states
-        if device.type == "cuda":
-            torch.cuda.empty_cache()
+                # cast on-device, then one transfer; rows go back to their original slots
+                vectors = pooled.to(torch.float16).cpu().numpy().astype(output_dtype)
+                outputs[(layer_index, pooling)][positions] = vectors
+        del hidden_states
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_dtype = np.dtype(extraction_config["output_dtype"])
     written = []
-    for (layer_index, pooling), chunks in buffers.items():
-        matrix = np.concatenate(chunks, axis=0).astype(output_dtype)
-        destination = output_dir / f"layer{layer_index:02d}_{pooling}.npy"
-        np.save(destination, matrix)
-        written.append({"layer": layer_index, "pooling": pooling, "shape": list(matrix.shape)})
+    for (layer_index, pooling), array in outputs.items():
+        array.flush()
+        written.append({"layer": layer_index, "pooling": pooling, "shape": list(array.shape)})
+    del outputs
 
     index = frame[["sample_id", "label_binary", "source", "language", "split"]].reset_index(drop=True)
     index.to_parquet(output_dir / "index.parquet", index=False)
 
     manifest = {
         "checkpoint": model_config["checkpoint"],
-        "n_samples": int(len(frame)),
+        "n_samples": n_samples,
         "n_layers": n_layers,
+        "hidden_size": hidden_size,
         "poolings": poolings,
         "max_length": max_length,
         "device": device.type,
+        "disk_gb": round(estimated_gb, 2),
         "files": written,
         "note": "row order in every .npy matches index.parquet",
     }
     with (output_dir / "manifest.json").open("w", encoding="utf-8") as handle:
         json.dump(manifest, handle, indent=2)
-    logger.info("wrote %d arrays to %s", len(written), output_dir)
+    logger.info("wrote %d arrays (%.1f GB) to %s", len(written), estimated_gb, output_dir)
     return manifest
 
 

@@ -124,14 +124,18 @@ def run_probes(embeddings_dir: Path, seed: int = 42) -> dict[str, Any]:
     rng = np.random.default_rng(seed)
     for entry in sorted(manifest["files"], key=lambda e: (e["layer"], e["pooling"])):
         layer, pooling = entry["layer"], entry["pooling"]
-        features = np.load(embeddings_dir / f"layer{layer:02d}_{pooling}.npy")
+        # mmap_mode keeps the full array on disk; only the rows a split needs are
+        # materialized, so probing 56 layer/pooling combinations never accumulates.
+        features = np.load(embeddings_dir / f"layer{layer:02d}_{pooling}.npy", mmap_mode="r")
         key = f"layer{layer:02d}/{pooling}"
         results["layers"][key] = _fit_and_score(features, index, probe_config, seed)
         logger.info("probed %s", key)
 
     # ---- Phase 10 controls, run on the final layer's representation ----
     last = sorted(manifest["files"], key=lambda e: e["layer"])[-1]
-    features = np.load(embeddings_dir / f"layer{last['layer']:02d}_{last['pooling']}.npy")
+    features = np.load(
+        embeddings_dir / f"layer{last['layer']:02d}_{last['pooling']}.npy", mmap_mode="r"
+    )
 
     if control_config.get("shuffled_labels"):
         shuffled_index = index.copy()
