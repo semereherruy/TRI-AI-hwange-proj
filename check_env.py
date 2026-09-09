@@ -10,12 +10,17 @@ Usage:
 
 from __future__ import annotations
 
-import importlib
+import importlib.metadata
 import platform
 import sys
 from typing import Optional
 
-# (import name, human label, required for the project to be usable at all)
+# (distribution name, human label, required for the project to be usable at all)
+#
+# Versions are read from installed package METADATA, never by importing the
+# package. Importing to probe a version executes arbitrary third-party code:
+# `umap-learn` pulls in numba/llvmlite, which can take the interpreter down with
+# no traceback and make the checker look like it silently stopped.
 DEPENDENCIES: list[tuple[str, str, bool]] = [
     ("torch", "PyTorch", True),
     ("transformers", "Transformers", True),
@@ -27,32 +32,33 @@ DEPENDENCIES: list[tuple[str, str, bool]] = [
     ("pandas", "pandas", True),
     ("numpy", "NumPy", True),
     ("pyarrow", "PyArrow", True),
-    ("sklearn", "scikit-learn", True),
+    ("scikit-learn", "scikit-learn", True),
     ("scipy", "SciPy", True),
     ("matplotlib", "Matplotlib", True),
     ("tqdm", "tqdm", True),
     ("ipykernel", "ipykernel", False),
-    ("umap", "umap-learn (optional, Phase 13)", False),
+    ("umap-learn", "umap-learn (optional, Phase 13)", False),
 ]
 
 MIN_PYTHON = (3, 9)
 
 
-def _version(module_name: str) -> Optional[str]:
-    """Return an installed module's version, or None if it is not importable."""
+def _version(distribution: str) -> Optional[str]:
+    """Return an installed distribution's version without importing it."""
     try:
-        module = importlib.import_module(module_name)
-    except Exception:
+        return importlib.metadata.version(distribution)
+    except importlib.metadata.PackageNotFoundError:
         return None
-    return getattr(module, "__version__", "unknown")
+    except Exception:
+        return "unknown"
 
 
 def check_dependencies() -> list[str]:
     """Print each dependency's status. Returns the names of missing required ones."""
     print("Dependencies")
     missing_required: list[str] = []
-    for import_name, label, required in DEPENDENCIES:
-        version = _version(import_name)
+    for distribution, label, required in DEPENDENCIES:
+        version = _version(distribution)
         if version is None:
             mark = "MISSING" if required else "absent (optional)"
             if required:
@@ -90,11 +96,16 @@ def check_device() -> None:
         print("  torch not installed — cannot determine device")
         return
 
+    try:
+        mps_available = torch.backends.mps.is_available()
+    except Exception:
+        mps_available = False
+
     if torch.cuda.is_available():
         name = torch.cuda.get_device_name(0)
         total_gb = torch.cuda.get_device_properties(0).total_memory / 1024**3
         print(f"  CUDA GPU: {name} ({total_gb:.1f} GB)")
-    elif torch.backends.mps.is_available():
+    elif mps_available:
         print("  MPS backend reported available (Apple Metal)")
         print("  NOTE: unverified for Gemma hidden-state extraction; treat as CPU-class")
     else:
