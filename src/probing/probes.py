@@ -68,6 +68,13 @@ def _fit_and_score(
     if train_mask.sum() == 0:
         return {"error": "no training rows"}
 
+    # Surface a corrupted extraction as itself, not as an opaque sklearn error.
+    if not np.isfinite(np.asarray(features[train_mask], dtype=np.float32)).all():
+        return {
+            "error": "features contain inf or nan — re-extract with model dtype bfloat16, "
+                     "not float16 (Gemma activations exceed the float16 range)"
+        }
+
     y_train = index.loc[train_mask, "label_binary"].to_numpy(dtype=int)
     if len(np.unique(y_train)) < 2:
         return {"error": "training rows contain a single class"}

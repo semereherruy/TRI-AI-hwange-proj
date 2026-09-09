@@ -213,8 +213,16 @@ def extract(
             layer = hidden_states[layer_index]
             for pooling in poolings:
                 pooled = pool_hidden_states(layer, encoded["attention_mask"], pooling)
-                # cast on-device, then one transfer; rows go back to their original slots
-                vectors = pooled.to(torch.float16).cpu().numpy().astype(output_dtype)
+                # float32 on-device, then one transfer; rows go back to original slots.
+                # Casting through float16 here would overflow Gemma's activation range
+                # even when output_dtype is wider.
+                vectors = pooled.to(torch.float32).cpu().numpy().astype(output_dtype)
+                if not np.isfinite(vectors).all():
+                    raise RuntimeError(
+                        f"non-finite values in layer {layer_index} ({pooling}) at rows "
+                        f"{positions[:3].tolist()}. This means the model dtype overflowed: "
+                        f"use bfloat16 rather than float16 for Gemma."
+                    )
                 outputs[(layer_index, pooling)][positions] = vectors
         del hidden_states
 

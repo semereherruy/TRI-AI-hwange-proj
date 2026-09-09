@@ -3,7 +3,10 @@
 model:
   # Gemma is gated: accept the licence on the Hub and provide HF_TOKEN.
   checkpoint: google/gemma-3-1b-pt
-  dtype: float16          # float32 on CPU, float16 on GPU
+  # bfloat16, NOT float16. Gemma-3 is trained in bfloat16 and its hidden states
+  # exceed the float16 maximum of 65504, which silently becomes inf and then breaks
+  # every downstream probe. bfloat16 has the same width and float32's exponent range.
+  dtype: bfloat16         # float32 on CPU, bfloat16 on GPU
   max_length: 256         # tokens; covers the corpus with little truncation
   batch_size: 32
 
@@ -17,7 +20,9 @@ extraction:
   layers: [0, 5, 10, 13, 16, 21, 26]
   # Both are extracted so Phase 10 can compare them as a pooling control.
   poolings: [last_token, mean]
-  output_dtype: float16   # halves storage; probes cast back to float32
+  # float32 on disk: bfloat16 has no numpy equivalent, and float16 would reintroduce
+  # the same overflow when storing. 7 layers x 2 poolings is ~2.6 GB, which is fine.
+  output_dtype: float32
 
 probing:
   standardize: true       # StandardScaler before LogisticRegression
