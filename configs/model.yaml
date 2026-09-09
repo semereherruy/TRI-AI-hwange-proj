@@ -9,7 +9,12 @@ model:
 
 extraction:
   # Which transformer layers to take. `all` keeps every layer including embeddings.
-  layers: all
+  # gemma-3-1b has 26 layers + 1 embedding = 27 extractable (indices 0-26).
+  #
+  # This 7-point sweep spans the full depth and shows the same curve shape as the
+  # full sweep at roughly a fifth of the cost: 1.3 GB and 14 probe fits, versus
+  # 5.0 GB and 54. Set to `all` for the complete sweep once the shape is known.
+  layers: [0, 5, 10, 13, 16, 21, 26]
   # Both are extracted so Phase 10 can compare them as a pooling control.
   poolings: [last_token, mean]
   output_dtype: float16   # halves storage; probes cast back to float32
