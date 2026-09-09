@@ -114,6 +114,30 @@ os.environ["HF_TOKEN"] = userdata.get("HF_TOKEN")
 
 To pick up later changes, `!git pull` — do not re-paste code into cells.
 
+`notebooks/colab_run.ipynb` drives the whole pipeline. Open it in Colab, set the
+runtime to GPU, and run top to bottom.
+
+### Pipeline order
+
+```bash
+python -m src.data.inspection     # Phase 2  -> reports/phase2_inspection/
+python -m src.data.canonical      # Phase 4  -> data/processed/canonical.parquet
+python -m src.data.quality        # Phase 5  -> reports/phase5_quality/
+python -m src.data.splits         # Phase 6  -> data/processed/canonical_split.parquet
+python -m src.analysis.baselines  # Phase 7  -> reports/phase7_baselines/
+python -m src.probing.extraction  # Phase 8  -> data/embeddings/   (GPU)
+python -m src.probing.probes      # Phase 9-10 -> reports/phase9_probes/
+```
+
+### Research decisions live in configuration
+
+`configs/data.yaml` holds every labelling decision Phase 2 raised but did not
+settle — where HateXplain's `offensive` class goes, what happens to the 919
+no-majority posts, the ToxiGen binarization threshold, and whether Ubuntu is a
+training source. Each has a documented provisional default. Changing one and
+re-running regenerates everything downstream, and the active policy is
+fingerprinted into `canonical_metadata.json` and every result file.
+
 ### Local
 
 ```bash

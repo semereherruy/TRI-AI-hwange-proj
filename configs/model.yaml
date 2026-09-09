@@ -1,0 +1,24 @@
+# Gemma hidden-state extraction (Phase 8) and probing (Phase 9).
+
+model:
+  # Gemma is gated: accept the licence on the Hub and provide HF_TOKEN.
+  checkpoint: google/gemma-3-1b-pt
+  dtype: float16          # float32 on CPU, float16 on GPU
+  max_length: 256         # tokens; covers the corpus with little truncation
+  batch_size: 32
+
+extraction:
+  # Which transformer layers to take. `all` keeps every layer including embeddings.
+  layers: all
+  # Both are extracted so Phase 10 can compare them as a pooling control.
+  poolings: [last_token, mean]
+  output_dtype: float16   # halves storage; probes cast back to float32
+
+probing:
+  standardize: true       # StandardScaler before LogisticRegression
+  max_iter: 2000
+  class_weight: balanced
+  # Phase 10 controls, all run against the same representations.
+  controls:
+    shuffled_labels: true
+    random_embeddings: true
