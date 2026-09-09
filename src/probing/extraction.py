@@ -169,6 +169,15 @@ def extract(
         if extraction_config["layers"] == "all"
         else list(extraction_config["layers"])
     )
+    # Validate before loading a batch: an out-of-range index otherwise fails deep in
+    # the extraction loop with a bare IndexError, after the model is already loaded.
+    out_of_range = [i for i in layer_indices if not 0 <= i < n_layers]
+    if out_of_range:
+        raise ValueError(
+            f"configs/model.yaml requests layer(s) {out_of_range}, but "
+            f"{model_config['checkpoint']} exposes {n_layers} (valid indices 0-{n_layers - 1}). "
+            f"Set `layers: all` or choose indices within range."
+        )
 
     output_dir.mkdir(parents=True, exist_ok=True)
     estimated_gb = n_samples * hidden_size * len(layer_indices) * len(poolings) * output_dtype.itemsize / 1024**3
