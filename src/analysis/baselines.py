@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from typing import Any
 
 import pandas as pd
@@ -37,6 +38,20 @@ VECTORIZERS = {
 }
 
 SEEDS = [42, 43, 44]
+
+# Impact Assessment Card 7: "Keyword shortcuts -> test examples with paraphrasing and
+# different wording." Neutral group names are masked in the test text and the same
+# trained model is re-scored. A large drop means the model keys on the mention of a
+# group rather than on harmful meaning -- the keyword-shortcut risk both cards name.
+IDENTITY_TERMS = [
+    "african", "arab", "asian", "caucasian", "hispanic", "indian", "indigenous",
+    "jewish", "jew", "jews", "refugee", "refugees", "minority", "muslim", "muslims",
+    "islam", "islamic", "black", "white", "mexican", "chinese", "latino", "latina",
+    "women", "woman", "men", "man", "gay", "lesbian", "homosexual", "trans",
+    "immigrant", "immigrants", "christian", "hindu", "buddhist",
+]
+IDENTITY_PATTERN = re.compile(r"\b(" + "|".join(IDENTITY_TERMS) + r")\b", flags=re.IGNORECASE)
+MASK_TOKEN = "person"
 
 # Honest limitation: LogisticRegression with the lbfgs solver on fixed data is
 # deterministic, so `random_state` does not perturb it and the reported std is
@@ -71,6 +86,47 @@ def _evaluate_slices(frame: pd.DataFrame, y_pred, y_score, by: str) -> dict[str,
             group["_score"].to_numpy(dtype=float),
         )
     return results
+
+
+def _mask_identity_terms(texts: pd.Series) -> pd.Series:
+    """Replace neutral group names with a placeholder, leaving everything else intact."""
+    return texts.astype(str).str.replace(IDENTITY_PATTERN, MASK_TOKEN, regex=True)
+
+
+def _data_card_slices(frame: pd.DataFrame, y_pred, y_score) -> dict[str, Any]:
+    """Evaluation slices named by the Data Card (6, 7) and Impact Card (8.1)."""
+    working = frame.assign(_pred=y_pred, _score=y_score)
+    slices: dict[str, Any] = {}
+
+    ethnic = working[working["is_ethnic_target"] == True]  # noqa: E712
+    if not ethnic.empty:
+        slices["ethnic_target_all"] = classification_metrics(
+            ethnic["label_binary"].to_numpy(dtype=int),
+            ethnic["_pred"].to_numpy(dtype=int),
+            ethnic["_score"].to_numpy(dtype=float),
+        )
+
+    # Data Card 7: false-positive check on legitimate ethnic-group discussion.
+    legitimate = ethnic[ethnic["label_binary"] == 0]
+    if not legitimate.empty:
+        n_flagged = int((legitimate["_pred"] == 1).sum())
+        slices["legitimate_ethnic_discussion"] = {
+            "n": int(len(legitimate)),
+            "n_incorrectly_flagged_toxic": n_flagged,
+            "false_positive_rate": round(n_flagged / len(legitimate), 4),
+            "note": "non-toxic rows that name an ethnic group; flagging these suppresses legitimate speech",
+        }
+
+    for column in ("toxicity_type", "harm_type"):
+        if column in working and working[column].notna().any():
+            slices[f"by_{column}"] = {}
+            for value, group in working[working[column].notna()].groupby(column):
+                slices[f"by_{column}"][str(value)] = classification_metrics(
+                    group["label_binary"].to_numpy(dtype=int),
+                    group["_pred"].to_numpy(dtype=int),
+                    group["_score"].to_numpy(dtype=float),
+                )
+    return slices
 
 
 def run_baselines() -> dict[str, Any]:
@@ -127,6 +183,21 @@ def run_baselines() -> dict[str, Any]:
         test_score = last_model.predict_proba(test["text"])[:, 1]
         entry["by_source"] = _evaluate_slices(test, test_pred, test_score, "source")
         entry["by_language"] = _evaluate_slices(test, test_pred, test_score, "language")
+        entry["data_card_slices"] = _data_card_slices(test, test_pred, test_score)
+
+        # Keyword-shortcut control: same model, identity terms masked.
+        masked_text = _mask_identity_terms(test["text"])
+        masked_pred = last_model.predict(masked_text)
+        masked_score = last_model.predict_proba(masked_text)[:, 1]
+        masked_metrics = classification_metrics(
+            test["label_binary"].to_numpy(dtype=int), masked_pred, masked_score
+        )
+        entry["keyword_shortcut_control"] = {
+            "masked_identity_terms": masked_metrics,
+            "f1_drop": round(entry["test_single_seed_detail"]["f1"] - masked_metrics["f1"], 4),
+            "n_texts_changed": int((masked_text != test["text"]).sum()),
+            "interpretation": "a large F1 drop indicates reliance on group mentions rather than harmful meaning",
+        }
 
         if not probe.empty:
             probe_pred = last_model.predict(probe["text"])

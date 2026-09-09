@@ -129,6 +129,29 @@ python -m src.probing.extraction  # Phase 8  -> data/embeddings/   (GPU)
 python -m src.probing.probes      # Phase 9-10 -> reports/phase9_probes/
 ```
 
+### Alignment with the Data Card
+
+Dataset composition follows the **Data Card (Draft v2, Aug 2026)**; evaluation metrics
+follow the **Impact Assessment Card**. Concretely:
+
+- The binary label is Toxic / Non-toxic over hate speech, harassment, abuse and
+  offensive language (Data Card 2, 5). HateXplain's `offensive` class is therefore
+  **inside** the toxic class, with the distinction preserved in `toxicity_type`.
+- `toxicity_type` and `is_ethnic_target` keep ethnic hate analysable as a named slice
+  rather than the dataset's sole target (Data Card 6).
+- False positives on legitimate ethnic-group discussion are evaluated as a first-class
+  result, not a side effect (Data Card 9, Impact Card 4).
+- A keyword-shortcut control masks neutral group names and re-scores the same model
+  (Impact Card 7).
+- Ubuntu data is held out of training and evaluated separately, satisfying both
+  "evaluate synthetic data separately from real data" (Impact Card 7) and the
+  English-predominance limitation (Data Card 10).
+
+**Unresolved, carried from Data Card 4:** HateXplain instances are social-media
+statements, not user prompts. The SOP pipeline takes prompts. This project currently
+treats them as prompts (the "Reframe" option); adopting prompt-native data instead
+would change the corpus, not the code.
+
 ### Research decisions live in configuration
 
 `configs/data.yaml` holds every labelling decision Phase 2 raised but did not

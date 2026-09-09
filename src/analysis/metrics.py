@@ -35,6 +35,12 @@ def classification_metrics(
         "f1": round(float(f1_score(y_true, y_pred, zero_division=0)), 4),
         "confusion_matrix": confusion_matrix(y_true, y_pred, labels=[0, 1]).tolist(),
     }
+
+    # Impact Assessment Card 8.1 names false-positive and false-negative rates as
+    # first-class measures: a false positive here means suppressing legitimate speech.
+    tn, fp, fn, tp = confusion_matrix(y_true, y_pred, labels=[0, 1]).ravel()
+    metrics["false_positive_rate"] = round(float(fp / (fp + tn)), 4) if (fp + tn) else None
+    metrics["false_negative_rate"] = round(float(fn / (fn + tp)), 4) if (fn + tp) else None
     if y_score is not None and len(np.unique(y_true)) == 2:
         metrics["roc_auc"] = round(float(roc_auc_score(y_true, y_score)), 4)
         metrics["pr_auc"] = round(float(average_precision_score(y_true, y_score)), 4)

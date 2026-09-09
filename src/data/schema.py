@@ -21,6 +21,9 @@ CANONICAL_COLUMNS: list[str] = [
     "label_binary",       # 0 = safe, 1 = harmful; nullable when undecidable
     "label_original",     # the source's own label, verbatim
     "label_type",         # how label_original was produced
+    "toxicity_type",      # Data Card 5: hate_speech | harassment | abuse |
+                          # offensive_language | none
+    "is_ethnic_target",   # Data Card 6: ethnic-hate sub-focus slice
     "harm_type",          # Ubuntu taxonomy, else null
     "target_type",        # individual | group | none
     "target_group",       # targeted group, source vocabulary

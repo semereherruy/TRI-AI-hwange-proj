@@ -3,15 +3,15 @@
   "per_source": {
     "hatexplain": {
       "strategy": "official splits, made group-consistent",
-      "n_rows": 13749,
-      "n_groups": 13724,
-      "n_groups_reassigned": 2
+      "n_rows": 19229,
+      "n_groups": 19192,
+      "n_groups_reassigned": 7
     },
     "toxigen": {
       "strategy": "official splits, made group-consistent",
       "n_rows": 9900,
       "n_groups": 9724,
-      "n_groups_reassigned": 176
+      "n_groups_reassigned": 181
     },
     "ubuntu": {
       "strategy": "held out entirely as a probe set",
@@ -21,6 +21,42 @@
     }
   },
   "official_split_conflicts": [
+    {
+      "group_id": "g_00a849611eb2",
+      "spanned": {
+        "train": 1,
+        "test": 1
+      },
+      "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_18c9303275cb",
+      "spanned": {
+        "val": 1,
+        "train": 1
+      },
+      "assigned_to": "val",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_3095289070a7",
+      "spanned": {
+        "val": 1,
+        "train": 1
+      },
+      "assigned_to": "val",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_89fb8c347724",
+      "spanned": {
+        "test": 2,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
     {
       "group_id": "g_9ef01d7fdb23",
       "spanned": {
@@ -38,6 +74,15 @@
         "test": 1
       },
       "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_fd27a82f24d2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
       "reason": "group indivisible; assigned to the split holding most of its rows"
     },
     {
@@ -1615,12 +1660,12 @@
   },
   "evaluation_views": {
     "in_domain": {
-      "train": 19788,
-      "val": 1373,
-      "test": 2488
+      "train": 24169,
+      "val": 1923,
+      "test": 3037
     },
     "cross_source": {
-      "hatexplain": 1374,
+      "hatexplain": 1923,
       "toxigen": 1114,
       "ubuntu": 0
     },
@@ -1630,15 +1675,15 @@
     "ubuntu_probe": 9000
   },
   "split_sizes": {
-    "train": 19788,
+    "train": 24169,
     "probe": 9000,
-    "test": 2488,
-    "val": 1373
+    "test": 3037,
+    "val": 1923
   },
   "split_by_source": {
-    "hatexplain/test": 1374,
-    "hatexplain/train": 11002,
-    "hatexplain/val": 1373,
+    "hatexplain/test": 1923,
+    "hatexplain/train": 15383,
+    "hatexplain/val": 1923,
     "toxigen/test": 1114,
     "toxigen/train": 8786,
     "ubuntu/probe": 9000

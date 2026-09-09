@@ -12,17 +12,25 @@ hatexplain:
   # Majority vote over 3 annotators. Only 48.9% of posts are unanimous.
   aggregation: majority
 
-  # RULING NEEDED. Where does the `offensive` class go?
+  # RESOLVED by the Data Card (v2, Aug 2026), sections 2 and 5: the binary label is
+  # Toxic / Non-toxic over "hate speech, harassment, abuse, and offensive language".
+  # `offensive` is therefore inside the toxic class, and the distinction is preserved
+  # in `toxicity_type` so ethnic hate stays analysable as its own slice (Data Card 6).
   #   harmful | safe | exclude
-  # Default `exclude`: it keeps the harmful/safe contrast clean and avoids
-  # asserting that offensive == hate speech, which the source does not claim.
-  offensive_maps_to: exclude
+  offensive_maps_to: harmful
 
   # RULING NEEDED. The 919 posts with no annotator majority.
   #   exclude | include_as_harmful | include_as_safe
   # Default `exclude`: matches the official split, which already omits exactly
   # these 919 posts. Note this discards the most ambiguous cases by construction.
   tie_posts: exclude
+
+  # Data Card 5: sub-category tagging, so ethnic hate remains a reportable slice
+  # within the broader toxic class rather than the dataset's sole target.
+  toxicity_type_map:
+    hatespeech: hate_speech
+    offensive: offensive_language
+    normal: none
 
   use_official_splits: true
 
@@ -39,8 +47,23 @@ toxigen:
   # per row, never per dataset.
   mark_synthetic_per_row: true
 
+  # ToxiGen is implicit hate speech targeting identity groups (Data Card 3:
+  # "broader toxic-language coverage").
+  toxicity_type: hate_speech
+
+# Data Card 6 + Impact Card 8.1: ethnic hate speech is a named evaluation slice, and
+# false positives on legitimate ethnic-group discussion are a first-class concern.
+# These target labels define the ethnic/national-origin slice. Listed here rather than
+# hard-coded because the boundary (e.g. religion vs ethnicity) is a judgement call.
+ethnic_targets:
+  [African, Arab, Asian, Caucasian, Hispanic, Indian, Indigenous, Jewish, Refugee, Minority]
+
 ubuntu:
-  # RULING NEEDED. 4,500 rows derive from 33 sentences, each fixing its own label.
+  # Confirmed by Impact Card 7 ("evaluate synthetic data separately from real data")
+  # and Data Card 10 (predominantly English sources). Ubuntu stays out of training and
+  # serves as the African-context / relational-harm evaluation slice.
+  #
+  # 4,500 rows derive from 33 sentences, each fixing its own label.
   #   probe_only | training_source
   # Default `probe_only`: ~33 independent units cannot support train/val/test.
   # Ubuntu is held out entirely as a diagnostic set and never trained on.

@@ -55,6 +55,8 @@ def load_hatexplain(config: dict[str, Any]) -> pd.DataFrame:
 
     offensive_policy = policy["offensive_maps_to"]
     tie_policy = policy["tie_posts"]
+    toxicity_type_map = policy.get("toxicity_type_map", {})
+    ethnic_targets = {t.casefold() for t in config.get("ethnic_targets", [])}
 
     rows: list[dict[str, Any]] = []
     for post_id, record in records.items():
@@ -81,6 +83,7 @@ def load_hatexplain(config: dict[str, Any]) -> pd.DataFrame:
                 label_binary = 1 if offensive_policy == "harmful" else 0
 
         targets = Counter(t for a in record["annotators"] for t in (a.get("target") or []))
+        named_targets = [t for t, _ in targets.most_common(3) if t.casefold() != "none"]
         text = " ".join(record["post_tokens"])
         rows.append(
             {
@@ -93,7 +96,9 @@ def load_hatexplain(config: dict[str, Any]) -> pd.DataFrame:
                 "label_binary": label_binary,
                 "label_original": majority_label,
                 "label_type": "majority_vote_of_3_human_annotators",
-                "target_group": ", ".join(t for t, _ in targets.most_common(3)) or None,
+                "target_group": ", ".join(named_targets) or None,
+                "toxicity_type": toxicity_type_map.get(majority_label, "none"),
+                "is_ethnic_target": any(t.casefold() in ethnic_targets for t in named_targets),
                 "is_synthetic": False,
                 "annotation_quality": quality,
                 "group_id": group_id_for(text),
@@ -151,6 +156,11 @@ def load_ubuntu(config: dict[str, Any]) -> pd.DataFrame:
                 "label_binary": binary,
                 "label_type": "template_metadata_assigned_at_generation",
                 "harm_type": harm_type,
+                # Ubuntu's relational taxonomy is not the Data Card's toxicity_type
+                # vocabulary; the harmful classes are recorded as hate_speech only at
+                # the binary level, with the relational category kept in harm_type.
+                "toxicity_type": "hate_speech" if binary == 1 else "none",
+                "is_ethnic_target": False,
                 "target_type": target_type,
                 "severity": severity,
                 "severity_scheme": severity_scheme,
@@ -206,6 +216,12 @@ def load_toxigen(config: dict[str, Any]) -> pd.DataFrame:
 
     field = policy["binarize_field"]
     threshold = float(policy["threshold"])
+    toxicity_type = policy.get("toxicity_type", "hate_speech")
+    ethnic_targets = {t.casefold() for t in config.get("ethnic_targets", [])}
+    # ToxiGen target_group strings are phrases ("jewish folks"), so match on substring.
+    def _is_ethnic(group: Any) -> bool:
+        text_value = str(group or "").casefold()
+        return any(term in text_value for term in ethnic_targets)
     rows: list[dict[str, Any]] = []
 
     for config_name in policy["configs"]:
@@ -233,6 +249,13 @@ def load_toxigen(config: dict[str, Any]) -> pd.DataFrame:
                         "label_original": None if pd.isna(rating) else f"{field}={rating}",
                         "label_type": f"continuous_1_5_mean_of_3_human_raters_binarized_at_{threshold}",
                         "target_group": record.get("target_group"),
+                        # a harmful row is hate speech; a benign row is not toxic at all
+                        "toxicity_type": (
+                            toxicity_type
+                            if (not pd.isna(rating) and float(rating) > threshold)
+                            else "none"
+                        ),
+                        "is_ethnic_target": _is_ethnic(record.get("target_group")),
                         # provenance is per row: some rows are human-written
                         "is_synthetic": method != "human",
                         "annotation_quality": "human_rated",

@@ -1,14 +1,14 @@
 {
   "policy": {
-    "hatexplain.offensive_maps_to": "exclude",
+    "hatexplain.offensive_maps_to": "harmful",
     "hatexplain.tie_posts": "exclude",
     "toxigen.threshold": 2.5,
     "ubuntu.role": "probe_only",
     "afrihate.enabled": false,
     "seed": 42
   },
-  "n_train": 19788,
-  "n_test": 2488,
+  "n_train": 24169,
+  "n_test": 3037,
   "n_probe": 9000,
   "seeds": [
     42,
@@ -20,60 +20,70 @@
     "word_1_2": {
       "test": {
         "n_seeds": 3,
-        "n": 2488,
+        "n": 3037,
         "positive_rate": {
-          "mean": 0.4582,
+          "mean": 0.5565,
           "std": 0.0
         },
         "accuracy": {
-          "mean": 0.7814,
+          "mean": 0.7521,
           "std": 0.0
         },
         "balanced_accuracy": {
-          "mean": 0.7787,
+          "mean": 0.7521,
           "std": 0.0
         },
         "precision": {
-          "mean": 0.769,
+          "mean": 0.7919,
           "std": 0.0
         },
         "recall": {
-          "mean": 0.7474,
+          "mean": 0.7521,
           "std": 0.0
         },
         "f1": {
-          "mean": 0.758,
+          "mean": 0.7715,
+          "std": 0.0
+        },
+        "false_positive_rate": {
+          "mean": 0.248,
+          "std": 0.0
+        },
+        "false_negative_rate": {
+          "mean": 0.2479,
           "std": 0.0
         },
         "roc_auc": {
-          "mean": 0.8652,
+          "mean": 0.835,
           "std": 0.0
         },
         "pr_auc": {
-          "mean": 0.8473,
+          "mean": 0.8622,
           "std": 0.0
         }
       },
       "test_single_seed_detail": {
-        "n": 2488,
-        "positive_rate": 0.4582,
-        "accuracy": 0.7814,
-        "balanced_accuracy": 0.7787,
-        "precision": 0.769,
-        "recall": 0.7474,
-        "f1": 0.758,
+        "n": 3037,
+        "positive_rate": 0.5565,
+        "accuracy": 0.7521,
+        "balanced_accuracy": 0.7521,
+        "precision": 0.7919,
+        "recall": 0.7521,
+        "f1": 0.7715,
         "confusion_matrix": [
           [
-            1092,
-            256
+            1013,
+            334
           ],
           [
-            288,
-            852
+            419,
+            1271
           ]
         ],
-        "roc_auc": 0.8652,
-        "pr_auc": 0.8473
+        "false_positive_rate": 0.248,
+        "false_negative_rate": 0.2479,
+        "roc_auc": 0.835,
+        "pr_auc": 0.8622
       },
       "ubuntu_probe_out_of_domain": {
         "n_seeds": 3,
@@ -83,100 +93,247 @@
           "std": 0.0
         },
         "accuracy": {
-          "mean": 0.6127,
+          "mean": 0.6786,
           "std": 0.0
         },
         "balanced_accuracy": {
-          "mean": 0.6127,
+          "mean": 0.6786,
           "std": 0.0
         },
         "precision": {
-          "mean": 0.7286,
+          "mean": 0.9213,
           "std": 0.0
         },
         "recall": {
-          "mean": 0.3591,
+          "mean": 0.3904,
           "std": 0.0
         },
         "f1": {
-          "mean": 0.4811,
+          "mean": 0.5485,
+          "std": 0.0
+        },
+        "false_positive_rate": {
+          "mean": 0.0333,
+          "std": 0.0
+        },
+        "false_negative_rate": {
+          "mean": 0.6096,
           "std": 0.0
         },
         "roc_auc": {
-          "mean": 0.691,
+          "mean": 0.7305,
           "std": 0.0
         },
         "pr_auc": {
-          "mean": 0.7145,
+          "mean": 0.7603,
           "std": 0.0
         }
       },
       "by_source": {
         "hatexplain": {
-          "n": 1374,
-          "positive_rate": 0.4323,
-          "accuracy": 0.8413,
-          "balanced_accuracy": 0.8412,
-          "precision": 0.8023,
-          "recall": 0.8401,
-          "f1": 0.8207,
+          "n": 1923,
+          "positive_rate": 0.5949,
+          "accuracy": 0.7613,
+          "balanced_accuracy": 0.7519,
+          "precision": 0.7981,
+          "recall": 0.8016,
+          "f1": 0.7998,
           "confusion_matrix": [
             [
-              657,
-              123
+              547,
+              232
             ],
             [
-              95,
-              499
+              227,
+              917
             ]
           ],
-          "roc_auc": 0.9069,
-          "pr_auc": 0.8851
+          "false_positive_rate": 0.2978,
+          "false_negative_rate": 0.1984,
+          "roc_auc": 0.838,
+          "pr_auc": 0.8812
         },
         "toxigen": {
           "n": 1114,
           "positive_rate": 0.4901,
-          "accuracy": 0.7074,
-          "balanced_accuracy": 0.7062,
-          "precision": 0.7263,
-          "recall": 0.6465,
-          "f1": 0.6841,
+          "accuracy": 0.7361,
+          "balanced_accuracy": 0.7344,
+          "precision": 0.7763,
+          "recall": 0.6484,
+          "f1": 0.7066,
           "confusion_matrix": [
             [
-              435,
-              133
+              466,
+              102
             ],
             [
-              193,
-              353
+              192,
+              354
             ]
           ],
-          "roc_auc": 0.806,
-          "pr_auc": 0.7977
+          "false_positive_rate": 0.1796,
+          "false_negative_rate": 0.3516,
+          "roc_auc": 0.8265,
+          "pr_auc": 0.8166
         }
       },
       "by_language": {
         "en": {
-          "n": 2488,
-          "positive_rate": 0.4582,
-          "accuracy": 0.7814,
-          "balanced_accuracy": 0.7787,
-          "precision": 0.769,
-          "recall": 0.7474,
-          "f1": 0.758,
+          "n": 3037,
+          "positive_rate": 0.5565,
+          "accuracy": 0.7521,
+          "balanced_accuracy": 0.7521,
+          "precision": 0.7919,
+          "recall": 0.7521,
+          "f1": 0.7715,
           "confusion_matrix": [
             [
-              1092,
-              256
+              1013,
+              334
             ],
             [
-              288,
-              852
+              419,
+              1271
             ]
           ],
-          "roc_auc": 0.8652,
-          "pr_auc": 0.8473
+          "false_positive_rate": 0.248,
+          "false_negative_rate": 0.2479,
+          "roc_auc": 0.835,
+          "pr_auc": 0.8622
         }
+      },
+      "data_card_slices": {
+        "ethnic_target_all": {
+          "n": 1312,
+          "positive_rate": 0.6867,
+          "accuracy": 0.7744,
+          "balanced_accuracy": 0.759,
+          "precision": 0.8614,
+          "recall": 0.8002,
+          "f1": 0.8297,
+          "confusion_matrix": [
+            [
+              295,
+              116
+            ],
+            [
+              180,
+              721
+            ]
+          ],
+          "false_positive_rate": 0.2822,
+          "false_negative_rate": 0.1998,
+          "roc_auc": 0.8446,
+          "pr_auc": 0.9146
+        },
+        "legitimate_ethnic_discussion": {
+          "n": 411,
+          "n_incorrectly_flagged_toxic": 116,
+          "false_positive_rate": 0.2822,
+          "note": "non-toxic rows that name an ethnic group; flagging these suppresses legitimate speech"
+        },
+        "by_toxicity_type": {
+          "hate_speech": {
+            "n": 1140,
+            "positive_rate": 1.0,
+            "accuracy": 0.7807,
+            "balanced_accuracy": 0.7807,
+            "precision": 1.0,
+            "recall": 0.7807,
+            "f1": 0.8768,
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                250,
+                890
+              ]
+            ],
+            "false_positive_rate": null,
+            "false_negative_rate": 0.2193,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          },
+          "none": {
+            "n": 1347,
+            "positive_rate": 0.0,
+            "accuracy": 0.752,
+            "balanced_accuracy": 0.752,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "confusion_matrix": [
+              [
+                1013,
+                334
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "false_positive_rate": 0.248,
+            "false_negative_rate": null,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          },
+          "offensive_language": {
+            "n": 550,
+            "positive_rate": 1.0,
+            "accuracy": 0.6927,
+            "balanced_accuracy": 0.6927,
+            "precision": 1.0,
+            "recall": 0.6927,
+            "f1": 0.8185,
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                169,
+                381
+              ]
+            ],
+            "false_positive_rate": null,
+            "false_negative_rate": 0.3073,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          }
+        }
+      },
+      "keyword_shortcut_control": {
+        "masked_identity_terms": {
+          "n": 3037,
+          "positive_rate": 0.5565,
+          "accuracy": 0.7419,
+          "balanced_accuracy": 0.746,
+          "precision": 0.8036,
+          "recall": 0.7095,
+          "f1": 0.7536,
+          "confusion_matrix": [
+            [
+              1054,
+              293
+            ],
+            [
+              491,
+              1199
+            ]
+          ],
+          "false_positive_rate": 0.2175,
+          "false_negative_rate": 0.2905,
+          "roc_auc": 0.8211,
+          "pr_auc": 0.8547
+        },
+        "f1_drop": 0.0179,
+        "n_texts_changed": 1271,
+        "interpretation": "a large F1 drop indicates reliance on group mentions rather than harmful meaning"
       },
       "probe_by_language": {
         "amh": {
@@ -197,29 +354,33 @@
               0
             ]
           ],
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 1.0,
           "roc_auc": 0.5,
           "pr_auc": 0.5
         },
         "en": {
           "n": 4500,
           "positive_rate": 0.5,
-          "accuracy": 0.7253,
-          "balanced_accuracy": 0.7253,
-          "precision": 0.7286,
-          "recall": 0.7182,
-          "f1": 0.7234,
+          "accuracy": 0.8571,
+          "balanced_accuracy": 0.8571,
+          "precision": 0.9213,
+          "recall": 0.7809,
+          "f1": 0.8453,
           "confusion_matrix": [
             [
-              1648,
-              602
+              2100,
+              150
             ],
             [
-              634,
-              1616
+              493,
+              1757
             ]
           ],
-          "roc_auc": 0.8517,
-          "pr_auc": 0.872
+          "false_positive_rate": 0.0667,
+          "false_negative_rate": 0.2191,
+          "roc_auc": 0.9428,
+          "pr_auc": 0.9551
         }
       },
       "probe_by_harm_type": {
@@ -241,6 +402,8 @@
               267
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.6449,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -263,6 +426,8 @@
               375
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.5,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -270,21 +435,23 @@
         "exclusion": {
           "n": 752,
           "positive_rate": 1.0,
-          "accuracy": 0.1662,
-          "balanced_accuracy": 0.1662,
+          "accuracy": 0.3391,
+          "balanced_accuracy": 0.3391,
           "precision": 1.0,
-          "recall": 0.1662,
-          "f1": 0.2851,
+          "recall": 0.3391,
+          "f1": 0.5065,
           "confusion_matrix": [
             [
               0,
               0
             ],
             [
-              627,
-              125
+              497,
+              255
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.6609,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -292,21 +459,23 @@
         "none": {
           "n": 4500,
           "positive_rate": 0.0,
-          "accuracy": 0.8662,
-          "balanced_accuracy": 0.8662,
+          "accuracy": 0.9667,
+          "balanced_accuracy": 0.9667,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
           "confusion_matrix": [
             [
-              3898,
-              602
+              4350,
+              150
             ],
             [
               0,
               0
             ]
           ],
+          "false_positive_rate": 0.0333,
+          "false_negative_rate": null,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -329,11 +498,37 @@
               231
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.692,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
         },
         "stereotyping": {
+          "n": 748,
+          "positive_rate": 1.0,
+          "accuracy": 0.3409,
+          "balanced_accuracy": 0.3409,
+          "precision": 1.0,
+          "recall": 0.3409,
+          "f1": 0.5085,
+          "confusion_matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              493,
+              255
+            ]
+          ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.6591,
+          "roc_auc": null,
+          "pr_auc": null,
+          "auc_note": "single class present in this slice"
+        },
+        "threat": {
           "n": 748,
           "positive_rate": 1.0,
           "accuracy": 0.5,
@@ -351,28 +546,8 @@
               374
             ]
           ],
-          "roc_auc": null,
-          "pr_auc": null,
-          "auc_note": "single class present in this slice"
-        },
-        "threat": {
-          "n": 748,
-          "positive_rate": 1.0,
-          "accuracy": 0.3262,
-          "balanced_accuracy": 0.3262,
-          "precision": 1.0,
-          "recall": 0.3262,
-          "f1": 0.4919,
-          "confusion_matrix": [
-            [
-              0,
-              0
-            ],
-            [
-              504,
-              244
-            ]
-          ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.5,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -382,60 +557,70 @@
     "char_wb_2_5": {
       "test": {
         "n_seeds": 3,
-        "n": 2488,
+        "n": 3037,
         "positive_rate": {
-          "mean": 0.4582,
+          "mean": 0.5565,
           "std": 0.0
         },
         "accuracy": {
-          "mean": 0.7765,
+          "mean": 0.7445,
           "std": 0.0
         },
         "balanced_accuracy": {
-          "mean": 0.7741,
+          "mean": 0.7467,
           "std": 0.0
         },
         "precision": {
-          "mean": 0.7621,
+          "mean": 0.796,
           "std": 0.0
         },
         "recall": {
-          "mean": 0.7447,
+          "mean": 0.7272,
           "std": 0.0
         },
         "f1": {
-          "mean": 0.7533,
+          "mean": 0.76,
+          "std": 0.0
+        },
+        "false_positive_rate": {
+          "mean": 0.2339,
+          "std": 0.0
+        },
+        "false_negative_rate": {
+          "mean": 0.2728,
           "std": 0.0
         },
         "roc_auc": {
-          "mean": 0.859,
+          "mean": 0.8255,
           "std": 0.0
         },
         "pr_auc": {
-          "mean": 0.8375,
+          "mean": 0.8538,
           "std": 0.0
         }
       },
       "test_single_seed_detail": {
-        "n": 2488,
-        "positive_rate": 0.4582,
-        "accuracy": 0.7765,
-        "balanced_accuracy": 0.7741,
-        "precision": 0.7621,
-        "recall": 0.7447,
-        "f1": 0.7533,
+        "n": 3037,
+        "positive_rate": 0.5565,
+        "accuracy": 0.7445,
+        "balanced_accuracy": 0.7467,
+        "precision": 0.796,
+        "recall": 0.7272,
+        "f1": 0.76,
         "confusion_matrix": [
           [
-            1083,
-            265
+            1032,
+            315
           ],
           [
-            291,
-            849
+            461,
+            1229
           ]
         ],
-        "roc_auc": 0.859,
-        "pr_auc": 0.8375
+        "false_positive_rate": 0.2339,
+        "false_negative_rate": 0.2728,
+        "roc_auc": 0.8255,
+        "pr_auc": 0.8538
       },
       "ubuntu_probe_out_of_domain": {
         "n_seeds": 3,
@@ -445,100 +630,247 @@
           "std": 0.0
         },
         "accuracy": {
-          "mean": 0.6324,
+          "mean": 0.6062,
           "std": 0.0
         },
         "balanced_accuracy": {
-          "mean": 0.6324,
+          "mean": 0.6062,
           "std": 0.0
         },
         "precision": {
-          "mean": 0.8989,
+          "mean": 1.0,
           "std": 0.0
         },
         "recall": {
-          "mean": 0.2984,
+          "mean": 0.2124,
           "std": 0.0
         },
         "f1": {
-          "mean": 0.4481,
+          "mean": 0.3504,
+          "std": 0.0
+        },
+        "false_positive_rate": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "false_negative_rate": {
+          "mean": 0.7876,
           "std": 0.0
         },
         "roc_auc": {
-          "mean": 0.6973,
+          "mean": 0.7245,
           "std": 0.0
         },
         "pr_auc": {
-          "mean": 0.6968,
+          "mean": 0.7262,
           "std": 0.0
         }
       },
       "by_source": {
         "hatexplain": {
-          "n": 1374,
-          "positive_rate": 0.4323,
-          "accuracy": 0.8282,
-          "balanced_accuracy": 0.8282,
-          "precision": 0.7859,
-          "recall": 0.8283,
-          "f1": 0.8066,
+          "n": 1923,
+          "positive_rate": 0.5949,
+          "accuracy": 0.767,
+          "balanced_accuracy": 0.7583,
+          "precision": 0.8042,
+          "recall": 0.8042,
+          "f1": 0.8042,
           "confusion_matrix": [
             [
-              646,
-              134
+              555,
+              224
             ],
             [
-              102,
-              492
+              224,
+              920
             ]
           ],
-          "roc_auc": 0.9084,
-          "pr_auc": 0.8842
+          "false_positive_rate": 0.2875,
+          "false_negative_rate": 0.1958,
+          "roc_auc": 0.8427,
+          "pr_auc": 0.8836
         },
         "toxigen": {
           "n": 1114,
           "positive_rate": 0.4901,
-          "accuracy": 0.7127,
-          "balanced_accuracy": 0.7116,
-          "precision": 0.7316,
-          "recall": 0.6538,
-          "f1": 0.6905,
+          "accuracy": 0.7056,
+          "balanced_accuracy": 0.7029,
+          "precision": 0.7725,
+          "recall": 0.5659,
+          "f1": 0.6533,
           "confusion_matrix": [
             [
-              437,
-              131
+              477,
+              91
             ],
             [
-              189,
-              357
+              237,
+              309
             ]
           ],
-          "roc_auc": 0.7859,
-          "pr_auc": 0.7636
+          "false_positive_rate": 0.1602,
+          "false_negative_rate": 0.4341,
+          "roc_auc": 0.7937,
+          "pr_auc": 0.7708
         }
       },
       "by_language": {
         "en": {
-          "n": 2488,
-          "positive_rate": 0.4582,
-          "accuracy": 0.7765,
-          "balanced_accuracy": 0.7741,
-          "precision": 0.7621,
-          "recall": 0.7447,
-          "f1": 0.7533,
+          "n": 3037,
+          "positive_rate": 0.5565,
+          "accuracy": 0.7445,
+          "balanced_accuracy": 0.7467,
+          "precision": 0.796,
+          "recall": 0.7272,
+          "f1": 0.76,
           "confusion_matrix": [
             [
-              1083,
-              265
+              1032,
+              315
             ],
             [
-              291,
-              849
+              461,
+              1229
             ]
           ],
-          "roc_auc": 0.859,
-          "pr_auc": 0.8375
+          "false_positive_rate": 0.2339,
+          "false_negative_rate": 0.2728,
+          "roc_auc": 0.8255,
+          "pr_auc": 0.8538
         }
+      },
+      "data_card_slices": {
+        "ethnic_target_all": {
+          "n": 1312,
+          "positive_rate": 0.6867,
+          "accuracy": 0.7767,
+          "balanced_accuracy": 0.7693,
+          "precision": 0.8735,
+          "recall": 0.7891,
+          "f1": 0.8292,
+          "confusion_matrix": [
+            [
+              308,
+              103
+            ],
+            [
+              190,
+              711
+            ]
+          ],
+          "false_positive_rate": 0.2506,
+          "false_negative_rate": 0.2109,
+          "roc_auc": 0.8466,
+          "pr_auc": 0.9153
+        },
+        "legitimate_ethnic_discussion": {
+          "n": 411,
+          "n_incorrectly_flagged_toxic": 103,
+          "false_positive_rate": 0.2506,
+          "note": "non-toxic rows that name an ethnic group; flagging these suppresses legitimate speech"
+        },
+        "by_toxicity_type": {
+          "hate_speech": {
+            "n": 1140,
+            "positive_rate": 1.0,
+            "accuracy": 0.7447,
+            "balanced_accuracy": 0.7447,
+            "precision": 1.0,
+            "recall": 0.7447,
+            "f1": 0.8537,
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                291,
+                849
+              ]
+            ],
+            "false_positive_rate": null,
+            "false_negative_rate": 0.2553,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          },
+          "none": {
+            "n": 1347,
+            "positive_rate": 0.0,
+            "accuracy": 0.7661,
+            "balanced_accuracy": 0.7661,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "confusion_matrix": [
+              [
+                1032,
+                315
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "false_positive_rate": 0.2339,
+            "false_negative_rate": null,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          },
+          "offensive_language": {
+            "n": 550,
+            "positive_rate": 1.0,
+            "accuracy": 0.6909,
+            "balanced_accuracy": 0.6909,
+            "precision": 1.0,
+            "recall": 0.6909,
+            "f1": 0.8172,
+            "confusion_matrix": [
+              [
+                0,
+                0
+              ],
+              [
+                170,
+                380
+              ]
+            ],
+            "false_positive_rate": null,
+            "false_negative_rate": 0.3091,
+            "roc_auc": null,
+            "pr_auc": null,
+            "auc_note": "single class present in this slice"
+          }
+        }
+      },
+      "keyword_shortcut_control": {
+        "masked_identity_terms": {
+          "n": 3037,
+          "positive_rate": 0.5565,
+          "accuracy": 0.7297,
+          "balanced_accuracy": 0.7356,
+          "precision": 0.8015,
+          "recall": 0.6834,
+          "f1": 0.7378,
+          "confusion_matrix": [
+            [
+              1061,
+              286
+            ],
+            [
+              535,
+              1155
+            ]
+          ],
+          "false_positive_rate": 0.2123,
+          "false_negative_rate": 0.3166,
+          "roc_auc": 0.8153,
+          "pr_auc": 0.8486
+        },
+        "f1_drop": 0.0222,
+        "n_texts_changed": 1271,
+        "interpretation": "a large F1 drop indicates reliance on group mentions rather than harmful meaning"
       },
       "probe_by_language": {
         "amh": {
@@ -559,29 +891,33 @@
               0
             ]
           ],
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 1.0,
           "roc_auc": 0.5,
           "pr_auc": 0.5
         },
         "en": {
           "n": 4500,
           "positive_rate": 0.5,
-          "accuracy": 0.7649,
-          "balanced_accuracy": 0.7649,
-          "precision": 0.8989,
-          "recall": 0.5969,
-          "f1": 0.7174,
+          "accuracy": 0.7124,
+          "balanced_accuracy": 0.7124,
+          "precision": 1.0,
+          "recall": 0.4249,
+          "f1": 0.5964,
           "confusion_matrix": [
             [
-              2099,
-              151
+              2250,
+              0
             ],
             [
-              907,
-              1343
+              1294,
+              956
             ]
           ],
-          "roc_auc": 0.808,
-          "pr_auc": 0.825
+          "false_positive_rate": 0.0,
+          "false_negative_rate": 0.5751,
+          "roc_auc": 0.8495,
+          "pr_auc": 0.8755
         }
       },
       "probe_by_harm_type": {
@@ -603,6 +939,8 @@
               125
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.8338,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -610,21 +948,23 @@
         "dehumanization": {
           "n": 750,
           "positive_rate": 1.0,
-          "accuracy": 0.5,
-          "balanced_accuracy": 0.5,
+          "accuracy": 0.308,
+          "balanced_accuracy": 0.308,
           "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6667,
+          "recall": 0.308,
+          "f1": 0.4709,
           "confusion_matrix": [
             [
               0,
               0
             ],
             [
-              375,
-              375
+              519,
+              231
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.692,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -647,6 +987,8 @@
               125
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.8338,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -654,21 +996,23 @@
         "none": {
           "n": 4500,
           "positive_rate": 0.0,
-          "accuracy": 0.9664,
-          "balanced_accuracy": 0.9664,
+          "accuracy": 1.0,
+          "balanced_accuracy": 1.0,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0,
           "confusion_matrix": [
             [
-              4349,
-              151
+              4500,
+              0
             ],
             [
               0,
               0
             ]
           ],
+          "false_positive_rate": 0.0,
+          "false_negative_rate": null,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -691,6 +1035,8 @@
               231
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.692,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -698,21 +1044,23 @@
         "stereotyping": {
           "n": 748,
           "positive_rate": 1.0,
-          "accuracy": 0.3249,
-          "balanced_accuracy": 0.3249,
-          "precision": 1.0,
-          "recall": 0.3249,
-          "f1": 0.4904,
+          "accuracy": 0.0,
+          "balanced_accuracy": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
           "confusion_matrix": [
             [
               0,
               0
             ],
             [
-              505,
-              243
+              748,
+              0
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 1.0,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
@@ -735,6 +1083,8 @@
               244
             ]
           ],
+          "false_positive_rate": null,
+          "false_negative_rate": 0.6738,
           "roc_auc": null,
           "pr_auc": null,
           "auc_note": "single class present in this slice"
