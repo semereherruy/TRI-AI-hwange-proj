@@ -116,6 +116,14 @@ def run_probes(embeddings_dir: Path, seed: int = 42) -> dict[str, Any]:
     probe_config = model_config["probing"]
     control_config = probe_config.get("controls", {})
 
+    # An empty or missing embeddings directory means extraction has not been run
+    # since it was last cleared -- say that, rather than failing on a missing file.
+    if not (embeddings_dir / "index.parquet").exists():
+        raise SystemExit(
+            f"No embeddings in {embeddings_dir}. Run extraction first:\n"
+            f"  python -m src.probing.extraction --splits train val test probe"
+        )
+
     index = pd.read_parquet(embeddings_dir / "index.parquet")
     with (embeddings_dir / "manifest.json").open(encoding="utf-8") as handle:
         manifest = json.load(handle)
