@@ -1,0 +1,64 @@
+# Research decisions that Phase 2 identified but did NOT resolve.
+#
+# Every value here is a PROVISIONAL DEFAULT, not a finding. Each is recorded in
+# the canonical dataset's metadata so any result can be traced to the policy that
+# produced it. Changing a value and re-running regenerates everything downstream.
+#
+# See reports/phase2_inspection/SUMMARY.md for the evidence behind each decision.
+
+seed: 42
+
+hatexplain:
+  # Majority vote over 3 annotators. Only 48.9% of posts are unanimous.
+  aggregation: majority
+
+  # RULING NEEDED. Where does the `offensive` class go?
+  #   harmful | safe | exclude
+  # Default `exclude`: it keeps the harmful/safe contrast clean and avoids
+  # asserting that offensive == hate speech, which the source does not claim.
+  offensive_maps_to: exclude
+
+  # RULING NEEDED. The 919 posts with no annotator majority.
+  #   exclude | include_as_harmful | include_as_safe
+  # Default `exclude`: matches the official split, which already omits exactly
+  # these 919 posts. Note this discards the most ambiguous cases by construction.
+  tie_posts: exclude
+
+  use_official_splits: true
+
+toxigen:
+  configs: [annotated]        # `train` excluded: different schema, machine labels
+  binarize_field: toxicity_human
+
+  # RULING NEEDED. `toxicity_human` is a continuous 1-5 mean of 3 annotators.
+  # Default 2.5 follows the published work (> threshold => harmful). ~15% of
+  # ratings fall in 3.0-3.67, so this threshold materially moves class balance.
+  threshold: 2.5
+
+  # Rows with actual_method == 'human' are human-written; is_synthetic is set
+  # per row, never per dataset.
+  mark_synthetic_per_row: true
+
+ubuntu:
+  # RULING NEEDED. 4,500 rows derive from 33 sentences, each fixing its own label.
+  #   probe_only | training_source
+  # Default `probe_only`: ~33 independent units cannot support train/val/test.
+  # Ubuntu is held out entirely as a diagnostic set and never trained on.
+  role: probe_only
+
+  # UNRESOLVED CONFLICT. Severity vocabularies collide across the two files:
+  # main = zero/low/high (safe=zero), synthetic = low/medium/high (safe=low).
+  # `low` therefore means safe in one file and harmful in the other. Values are
+  # kept verbatim alongside a severity_scheme column; no harmonization applied.
+  harmonize_severity: false
+
+  # UNRESOLVED CONFLICT. 8 of 33 Amharic translations differ between files,
+  # several by second-person grammatical gender. Pending native-speaker review,
+  # both variants are kept and flagged.
+  drop_divergent_translations: false
+
+afrihate:
+  # Gated on the Hub. Requires licence acceptance plus HF_TOKEN in the
+  # environment or Colab Secrets. Set true once access is granted.
+  enabled: false
+  languages: [amh]           # Amharic, to pair with Ubuntu

@@ -1,0 +1,116 @@
+{
+  "n_rows": 32649,
+  "empty_and_missing": {
+    "empty_text_rows": 0,
+    "null_text_rows": 0,
+    "null_label_binary": 0,
+    "missing_by_column": {
+      "harm_type": 23649,
+      "target_type": 23649,
+      "target_group": 9000,
+      "severity": 23649,
+      "severity_scheme": 23649,
+      "context": 31649,
+      "rationale": 23649,
+      "pair_id": 23649,
+      "official_split": 9000
+    }
+  },
+  "duplicates": {
+    "exact_duplicate_rows": 9071,
+    "normalized_duplicate_rows": 9127,
+    "cross_source_duplicate_texts": 0,
+    "cross_source_examples": [],
+    "per_source": {
+      "hatexplain": {
+        "n_rows": 13749,
+        "n_distinct_text": 13724,
+        "repetition_factor": 1.0
+      },
+      "toxigen": {
+        "n_rows": 9900,
+        "n_distinct_text": 9780,
+        "repetition_factor": 1.01
+      },
+      "ubuntu": {
+        "n_rows": 9000,
+        "n_distinct_text": 74,
+        "repetition_factor": 121.62
+      }
+    }
+  },
+  "label_consistency": {
+    "n_groups": 23481,
+    "groups_with_conflicting_labels": 17,
+    "examples": [
+      "g_1fd752e4d156",
+      "g_357cf637002d",
+      "g_401c946f275d",
+      "g_442daf6b0c4a",
+      "g_4e6c280de7f5"
+    ]
+  },
+  "bilingual_pairs": {
+    "n_pairs": 4500,
+    "pairs_not_exactly_two_rows": 0,
+    "pairs_not_two_languages": 0,
+    "pairs_spanning_multiple_groups": 0,
+    "pairs_with_conflicting_labels": 0
+  },
+  "templates": {
+    "n_groups": 23481,
+    "n_groups_with_multiple_rows": 222,
+    "largest_groups": [
+      {
+        "group_id": "g_b0f54573ba58",
+        "n_rows": 302,
+        "source": "ubuntu"
+      },
+      {
+        "group_id": "g_4c1bd0fc4d46",
+        "n_rows": 302,
+        "source": "ubuntu"
+      },
+      {
+        "group_id": "g_36732a6c8c9b",
+        "n_rows": 302,
+        "source": "ubuntu"
+      },
+      {
+        "group_id": "g_c6158d34b9a3",
+        "n_rows": 302,
+        "source": "ubuntu"
+      },
+      {
+        "group_id": "g_5be999893b61",
+        "n_rows": 302,
+        "source": "ubuntu"
+      }
+    ],
+    "max_group_size": 302,
+    "pct_rows_in_multi_row_groups": 28.76
+  },
+  "distributions": {
+    "by_source": {
+      "hatexplain": 13749,
+      "toxigen": 9900,
+      "ubuntu": 9000
+    },
+    "by_language": {
+      "en": 28149,
+      "amh": 4500
+    },
+    "by_synthetic": {
+      "True": 18752,
+      "False": 13897
+    },
+    "by_source_language": {
+      "hatexplain/en": 13749,
+      "toxigen/en": 9900,
+      "ubuntu/amh": 4500,
+      "ubuntu/en": 4500
+    }
+  },
+  "proposed_removals": [],
+  "note": "No rows were removed. Removals are proposals requiring a ruling."
+}

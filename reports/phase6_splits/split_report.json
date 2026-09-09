@@ -1,0 +1,1646 @@
+{
+  "seed": 42,
+  "per_source": {
+    "hatexplain": {
+      "strategy": "official splits, made group-consistent",
+      "n_rows": 13749,
+      "n_groups": 13724,
+      "n_groups_reassigned": 2
+    },
+    "toxigen": {
+      "strategy": "official splits, made group-consistent",
+      "n_rows": 9900,
+      "n_groups": 9724,
+      "n_groups_reassigned": 176
+    },
+    "ubuntu": {
+      "strategy": "held out entirely as a probe set",
+      "reason": "configured role=probe_only",
+      "n_rows": 9000,
+      "n_groups": 33
+    }
+  },
+  "official_split_conflicts": [
+    {
+      "group_id": "g_9ef01d7fdb23",
+      "spanned": {
+        "train": 1,
+        "test": 1
+      },
+      "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_f2b285b30a2b",
+      "spanned": {
+        "train": 2,
+        "val": 1,
+        "test": 1
+      },
+      "assigned_to": "train",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_0056847cf740",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_02e4ada9ac39",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_04ed0f02270a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_08325c6681f4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_091ab34692cb",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_0a2d4f9ad2e8",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_0baf744c2c2b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_0e4a6c88f8c4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_1021469012b1",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_11c9b1c81223",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_13013627c4a7",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_13c4a0e661bb",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_17b3e598e75f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_1a9671e8275d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_1b904f8642e7",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_1fd752e4d156",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_1fdae9c58c1c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_219b9902f2d2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_26ce4ddf7f16",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2a3e726a9f6d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2a576d0d0ff3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2ae50eb7e2f6",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2b26c333d474",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2b7461b5bd62",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2b94fed9f8f6",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2c40f5fb8e85",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2d02a89b4af8",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2d7c6fc08ca0",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2dcb44cd124a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2ee3cf5ba7ec",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_2fa2250d444c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_308c830a2107",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_31a12b618f8e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_32b3b6c8b4b2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_337c822b8543",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_343ebbf7dd59",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_357cf637002d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_3864a3e7d5e8",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_3b24a1d67a71",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_3d458f8b688f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_401c946f275d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_42e45ce8015b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_442daf6b0c4a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_45b707d85de6",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_4761ea6eda91",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_47ca4cfa110a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_47d0466f8652",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_4819868fdfc2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_49e8832f73d3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_4e6c280de7f5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_50358ca18c08",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_52e89181ca78",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_53079b2fd932",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_54c42a506568",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_5583f76b3866",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_56ef7d3d8840",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_594ee287f923",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_59c92c4900e4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_59c9b3101215",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_5ada72c6a43a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_5b50b2bc743e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_5d554108171e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_5fcdd76473da",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_6121f8c7ac2e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_614b1631fe67",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_626b5f3cf5de",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_6376b81e4aa7",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_66f3ce9d0361",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_6833a4bb7bad",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_68f8069fe7be",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_6a4be737c3e2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_6c4a556143e2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_70966a6706d8",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7341f052968c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_741d5a76038f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_759ba4b44e6f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_75cf3ce5dacc",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_75f7d7bbd35e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_77d9da25b3b4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7863a555dea6",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_791a595a9757",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7f8ebc083960",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7fb3887c7b4e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7fb4effa5692",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_7fd62dd41765",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_8229bf9b9f8e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_873cb63e98c2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_88e0d7cd3ac7",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_8c256d5abfba",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_8e0826db0077",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_91848c697376",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_922378007209",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9226dc41a2f9",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9581f08382c4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_96affb5a55a5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_98835496862b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_990e13f6f15d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9914e8cfb136",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_992e96fd0ea5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9b7ee70d67e3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9bae8e69dc05",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9d6036625ab5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9e89d6317e49",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_9faed44b09ee",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a2fbf4c19975",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a49a3dd1c183",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a636a361f42b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a642dae0bbf0",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a6d7badc79c2",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a9cbb007d787",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a9e198e8b28c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_a9ec425b5b1f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_aad8fbbee471",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ac0bd7479951",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ad6d252eb85f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b03b4ab38e33",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b0bed03f0c48",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b194d2b6cbb1",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b1b43d2d2f30",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b46b8c310573",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b4d2be865b0e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b62f4b6a2031",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b6db9257d9fb",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b7e121ca3410",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b7fc502248ff",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b96f6eddd918",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_b9e49ab98711",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ba61251e308e",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_bb9871843eb4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_bf74d0a385da",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c179cd0f5371",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c43f2cc063f9",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c44003b8fbb3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c453a1eda3ec",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c4a20ba75361",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_c9889dc9a176",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_cb29e1b3128a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_cd4278478e6b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_cf513e83b4f8",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_cfd8ce9f7663",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d032be887fc0",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d25f48bab9c9",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d38af559b10b",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d4b8f0758e8f",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d593c4f252c9",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d5a82e2cbb82",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d6352a92a882",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_d89e1b0a07b0",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_da85c8c7b969",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_dc0e9d68a956",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_dcadab5b805c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ddcc0a1ce417",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_dff404cca536",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_e0dd4d3714ee",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_e25bd13bb7ab",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_e5166c21b3f5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_e9338e0e0135",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_e9de46193814",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ea71b77869cd",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_eaf2ad0fc76c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ecd7fd9fc7e7",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ee1dcfefcad3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ef261d4775b5",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_f277b306cdf3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_f5fa1fa42394",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_f81e9d122b60",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_f93cf55b8bc4",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_fc280815197d",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_fc60aebb9ea9",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_fd1d9bd3c2f0",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_fe7883160403",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ff0bbf26d3b3",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ff127dc3069a",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    },
+    {
+      "group_id": "g_ff6d98fa5e4c",
+      "spanned": {
+        "test": 1,
+        "train": 1
+      },
+      "assigned_to": "test",
+      "reason": "group indivisible; assigned to the split holding most of its rows"
+    }
+  ],
+  "unassigned_rows": 0,
+  "leakage_check": {
+    "groups_spanning_splits": 0,
+    "texts_spanning_splits": 0,
+    "clean": true
+  },
+  "evaluation_views": {
+    "in_domain": {
+      "train": 19788,
+      "val": 1373,
+      "test": 2488
+    },
+    "cross_source": {
+      "hatexplain": 1374,
+      "toxigen": 1114,
+      "ubuntu": 0
+    },
+    "african_language": {
+      "amh": 4500
+    },
+    "ubuntu_probe": 9000
+  },
+  "split_sizes": {
+    "train": 19788,
+    "probe": 9000,
+    "test": 2488,
+    "val": 1373
+  },
+  "split_by_source": {
+    "hatexplain/test": 1374,
+    "hatexplain/train": 11002,
+    "hatexplain/val": 1373,
+    "toxigen/test": 1114,
+    "toxigen/train": 8786,
+    "ubuntu/probe": 9000
+  }
+}
