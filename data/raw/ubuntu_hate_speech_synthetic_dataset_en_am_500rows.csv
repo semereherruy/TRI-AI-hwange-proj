@@ -1,0 +1,501 @@
+﻿id,text_en,text_am,label,ubuntu_harm_type,relational_harm,relation_target,severity,context,language,rationale_en,rationale_am
+1,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+2,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+3,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+4,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+5,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+6,They threaten our safety.,ደህንነታችንን ይሸብራሉ።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+7,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+8,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+9,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+10,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+11,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+12,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+13,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+14,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+15,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+16,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+17,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+18,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+19,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+20,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+21,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+22,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+23,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+24,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+25,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+26,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+27,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+28,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+29,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+30,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+31,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+32,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+33,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+34,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+35,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+36,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+37,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+38,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+39,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+40,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+41,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+42,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+43,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+44,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+45,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+46,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+47,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+48,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+49,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+50,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+51,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+52,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+53,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+54,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+55,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+56,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+57,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+58,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+59,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+60,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+61,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+62,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+63,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+64,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+65,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+66,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+67,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+68,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+69,They threaten our safety.,ደህንነታችንን ይሸብራሉ።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+70,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+71,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+72,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+73,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+74,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+75,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+76,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+77,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+78,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+79,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+80,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+81,They threaten our safety.,ደህንነታችንን ይሸብራሉ።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+82,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+83,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+84,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+85,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+86,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+87,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+88,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+89,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+90,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+91,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+92,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+93,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+94,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+95,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+96,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+97,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+98,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+99,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+100,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+101,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+102,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+103,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+104,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+105,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+106,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+107,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+108,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+109,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+110,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+111,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+112,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+113,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+114,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+115,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+116,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+117,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+118,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+119,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+120,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+121,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+122,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+123,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+124,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+125,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+126,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+127,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+128,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+129,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+130,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+131,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+132,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+133,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+134,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+135,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+136,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+137,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+138,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+139,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+140,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+141,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+142,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+143,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+144,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+145,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+146,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+147,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+148,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+149,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+150,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+151,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+152,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+153,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+154,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+155,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+156,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+157,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+158,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+159,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+160,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+161,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+162,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+163,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+164,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+165,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+166,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+167,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+168,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+169,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+170,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+171,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+172,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+173,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+174,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+175,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+176,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+177,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+178,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+179,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+180,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+181,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+182,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+183,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+184,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+185,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+186,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+187,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+188,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+189,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+190,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+191,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+192,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+193,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+194,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+195,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+196,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+197,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+198,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+199,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+200,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+201,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+202,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+203,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+204,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+205,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+206,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+207,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+208,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+209,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+210,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+211,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+212,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+213,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+214,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+215,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+216,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+217,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+218,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+219,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+220,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+221,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+222,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+223,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+224,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+225,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+226,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+227,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+228,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+229,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+230,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+231,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+232,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+233,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+234,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+235,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+236,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+237,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+238,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+239,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+240,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+241,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+242,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+243,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+244,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+245,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+246,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+247,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+248,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+249,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+250,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+251,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+252,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+253,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+254,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+255,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+256,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+257,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+258,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+259,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+260,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+261,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+262,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+263,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+264,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+265,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+266,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+267,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+268,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+269,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+270,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+271,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+272,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+273,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+274,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+275,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+276,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+277,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+278,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+279,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+280,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+281,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+282,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+283,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+284,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+285,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+286,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+287,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+288,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+289,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+290,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+291,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+292,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+293,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+294,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+295,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+296,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+297,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+298,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+299,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+300,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+301,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+302,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+303,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+304,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+305,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+306,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+307,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+308,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+309,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+310,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+311,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+312,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+313,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+314,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+315,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+316,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+317,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+318,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+319,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+320,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+321,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+322,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+323,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+324,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+325,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+326,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+327,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+328,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+329,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+330,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+331,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+332,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+333,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+334,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+335,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+336,They threaten our safety.,ደህንነታችንን ይሸብራሉ።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+337,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+338,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+339,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+340,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+341,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+342,You do not belong in this community.,በዚህ ማህበረሰብ ውስጥ አትገባም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+343,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+344,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+345,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+346,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+347,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+348,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+349,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+350,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+351,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+352,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,family conversation,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+353,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+354,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+355,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+356,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+357,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+358,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+359,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+360,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+361,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+362,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+363,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+364,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+365,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+366,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+367,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+368,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+369,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+370,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+371,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+372,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+373,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+374,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+375,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+376,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+377,Every person should be heard.,እያንዳንዱ ሰው መሰማት አለበት።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+378,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+379,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+380,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+381,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+382,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+383,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+384,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+385,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+386,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+387,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+388,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+389,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+390,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+391,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+392,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+393,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+394,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+395,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+396,You should be pushed out.,መባረር አለብህ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+397,They threaten our safety.,ደህንነታችንን ይሸብራሉ።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+398,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+399,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+400,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+401,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+402,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+403,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+404,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+405,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+406,Your voice does not matter here.,እዚህ ድምፅህ አይቆጠርም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+407,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+408,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,public debate,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+409,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+410,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+411,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+412,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+413,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+414,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+415,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,public debate,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+416,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+417,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+418,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+419,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+420,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+421,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+422,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+423,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+424,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+425,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+426,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,community discussion,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+427,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+428,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+429,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+430,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+431,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+432,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+433,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+434,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+435,They are not real people.,እውነተኛ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,meeting,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+436,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+437,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+438,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+439,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+440,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+441,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+442,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+443,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+444,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+445,They are less than human.,ከሰው በታች ናቸው።,hate_speech,dehumanization,Yes,group,high,workplace,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+446,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+447,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,school,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+448,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,online forum,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+449,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+450,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+451,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+452,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+453,We should speak respectfully.,በክብር መናገር አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+454,Leave our community now.,ከማህበረሰባችን አሁን ውጣ።,hate_speech,exclusion,Yes,group,high,online forum,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+455,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,workplace,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+456,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+457,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+458,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+459,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+460,Let us work for peace.,ለሰላም በጋራ እንስራ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+461,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+462,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+463,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,community discussion,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+464,Their kind always ruins everything.,የእነሱ ዓይነት ሁልጊዜ ሁሉንም ያበላሻል።,hate_speech,stereotyping,Yes,group,medium,workplace,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+465,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+466,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+467,Respect helps communities grow stronger.,ክብር ማህበረሰቦችን ያጠናክራል።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+468,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+469,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+470,They are not fully human.,እነሱ ሙሉ ሰው አይደሉም።,hate_speech,dehumanization,Yes,group,high,community discussion,English-Amharic,Strips humanity from the target.,ሰውነትን ይክዳል።
+471,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+472,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,family conversation,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+473,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,community discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+474,Different views can still be handled kindly.,የተለያዩ አስተያየቶች በቸርነት ሊታዩ ይችላሉ።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+475,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+476,We should correct mistakes without humiliation.,ስህተትን ያለ ውርደት ማስተካከል አለብን።,safe,none,No,none,low,public debate,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+477,Everyone has value in this room.,በዚህ ክፍል ያለ ሁሉም ሰው ዋጋ አለው።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+478,People deserve fairness and care.,ሰዎች ፍትሃዊነት እና እንክብካቤ ይገባቸዋል።,safe,none,No,none,low,online forum,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+479,People like them always cause trouble.,እንደ እነሱ ያሉ ሰዎች ሁልጊዜ ችግር ያመጣሉ።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+480,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,school,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+481,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+482,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+483,We can solve this together.,ይህን በጋራ ልንፈታ እንችላለን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+484,We should treat people fairly.,ሰዎችን በፍትሃዊነት ማየት አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+485,You do not belong here.,እዚህ አትመለከቱም።,hate_speech,belonging denial,Yes,group,high,meeting,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+486,A fair discussion includes every voice.,ፍትሃዊ ውይይት ሁሉንም ድምፅ ያካትታል።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+487,Get out of our space.,ከቦታችን ውጣ።,hate_speech,exclusion,Yes,group,high,civic discussion,English-Amharic,Pushes removal and rejection.,ማግለልን እና መከልከልን ያበረታታል።
+488,You should stay silent.,ዝም ብለህ መቆየት አለብህ።,hate_speech,silencing,Yes,individual/group,medium,civic discussion,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+489,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,school,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+490,They are a danger to everyone.,እነሱ ለሁሉም ስጋት ናቸው።,hate_speech,threat,Yes,group,high,online forum,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+491,Everyone deserves dignity.,ሁሉም ሰው ክብር ይገባዋል።,safe,none,No,none,low,civic discussion,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+492,Let us find a solution that works for everyone.,ለሁሉም የሚሰራ መፍትሄ እንፈልግ።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+493,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,meeting,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+494,That group is always the problem.,ያ ቡድን ሁልጊዜ ችግር ነው።,hate_speech,stereotyping,Yes,group,medium,family conversation,English-Amharic,Uses harmful group stereotype.,ጎጂ የቡድን መደብ ያደርጋል።
+495,We can disagree without hate.,ያለ ጥላቻ መለያየት እንችላለን።,safe,none,No,none,low,workplace,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+496,We should fear what they will do.,ምን እንደሚያደርጉ መፍራት አለብን።,hate_speech,threat,Yes,group,high,civic discussion,English-Amharic,Frames the target as danger.,እንደ ስጋት ይቀርባል።
+497,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,public debate,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።
+498,You have no place among us.,ከእኛ መካከል ቦታ የለህም።,hate_speech,belonging denial,Yes,group,high,family conversation,English-Amharic,Denies membership and belonging.,አባልነትን እና ተሳትፎን ይከልክላል።
+499,We should listen before judging.,ከመፍረድ በፊት ማዳመጥ አለብን።,safe,none,No,none,low,meeting,English-Amharic,"Affirms dignity, cooperation, and mutual respect.",ክብርን፣ ትብብርን እና መከባበርን ያበረታታል።
+500,Nobody wants to hear you.,ማንም ሊሰማህ አይፈልግም።,hate_speech,silencing,Yes,individual/group,medium,school,English-Amharic,Suppresses participation and recognition.,ተሳትፎን እና መታወቅን ይከልክላል።

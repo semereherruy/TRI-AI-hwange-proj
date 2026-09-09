@@ -1,0 +1,35 @@
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipykernel_launcher*
+
+# Vendored third-party dataset repos — re-fetched from source, never edited here.
+# Provenance and fetch instructions live in README.md.
+data/raw/AfriHate-main/
+data/raw/HateXplain-master/
+data/raw/TOXIGEN-main/
+
+# Generated artefacts — reproducible from the pipeline, too large for git.
+data/processed/
+!data/processed/.gitkeep
+data/embeddings/
+outputs/
+reports/
+*.npy
+*.npz
+
+# Never commit credentials (HuggingFace tokens live in Colab secrets)
+.env
+*.token
+
+# macOS
+.DS_Store
+
+# Notebook noise
+.ipynb_checkpoints/

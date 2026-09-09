@@ -1,0 +1,31 @@
+# Local development environment — macOS x86_64 (Intel), CPU / MPS, no CUDA.
+# Purpose: authoring, dataset inspection, cleaning, TF-IDF baselines.
+# Gemma hidden-state extraction (Phase 8) is NOT expected to run here — see README.
+#
+# Why this file differs from requirements.txt:
+#   PyTorch published no macOS x86_64 wheel after 2.2.2, and 2.2.2 is compiled
+#   against the NumPy 1.x C API. With NumPy 2.x installed, `torch` imports but the
+#   torch<->numpy bridge is dead ("Failed to initialize NumPy: _ARRAY_API not
+#   found"), which breaks tensor.numpy() — the exact path Phase 8 -> Phase 9 needs.
+#   NumPy is therefore pinned below 2 here, and only here.
+
+torch==2.2.2              # last macOS x86_64 wheel published by PyTorch
+numpy<2                   # REQUIRED: torch 2.2.2 is built against the NumPy 1.x C API
+
+transformers>=4.50
+huggingface_hub>=0.26
+accelerate>=1.0
+sentencepiece>=0.2
+safetensors>=0.4
+
+datasets>=3.0,<4          # datasets 4.x requires Python >=3.10; local is 3.9.6
+
+pandas>=2.2
+pyarrow>=14
+scikit-learn>=1.5
+scipy>=1.13
+
+matplotlib>=3.9
+tqdm>=4.66
+
+ipykernel>=6.29           # required for notebooks/ to run against this venv
